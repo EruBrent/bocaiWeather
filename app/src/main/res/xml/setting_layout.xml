@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory>
+        <CheckBoxPreference
+            android:title="移动网络不自动进行更新"
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="nowifi"/>
+
+        <CheckBoxPreference
+            android:title="版本信息"
+            android:key="Version"/>
+
+        <CheckBoxPreference
+            android:title="关于"
+            android:key="about"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>
