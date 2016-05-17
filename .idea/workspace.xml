@@ -11,98 +11,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8912ce0-6c66-41f8-8bc8-a3ea02165536" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/animated_vector_drawable_23_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/design_23_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/preference_v7_23_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_vector_drawable_23_2_1.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/Database/bocaiWeatherDB.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/Database/bocaiWeatherOpenHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/Model/City.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/Model/County.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/Model/Province.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/Util/Utility.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/.idea/gradle.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/.idea/runConfigurations.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/libs/gson-2.6.2-javadoc.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/libs/gson-2.6.2-sources.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/libs/gson-2.6.2.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/proguard-rules.pro" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/androidTest/java/oyj/com/bocaibar/ApplicationTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/AndroidManifest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/java/oyj/com/bocaibar/DBManager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/java/oyj/com/bocaibar/MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/java/oyj/com/bocaibar/NavSettingActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/java/oyj/com/bocaibar/SettingFragment.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/drawable-hdpi/ic_action_search.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/drawable-mdpi/ic_action_search.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/drawable-xhdpi/ic_action_search.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/drawable-xxhdpi/ic_action_search.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/drawable/ic_menu_manage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/drawable/ic_menu_share.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/drawable/side_nav_bar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/layout/activity_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/layout/head_layout.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/layout/nav_header_main.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/layout/nav_setting.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/menu/activity_main_drawer.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/menu/menu.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/mipmap-xxhdpi/pict.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/raw/citychina.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/values-w820dp/dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/values/attrs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/values/colors.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/values/dimens.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/values/strings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/values/styles.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/xml/searchable.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/main/res/xml/setting_layout.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/app/src/test/java/oyj/com/bocaibar/ExampleUnitTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/build.gradle" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/gradle.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/gradle/wrapper/gradle-wrapper.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/gradlew" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/gradlew.bat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bocaiBar/settings.gradle" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/.gitignore" afterPath="$PROJECT_DIR$/app/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_view_layout.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_2_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/design_23_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/design_23_1_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_2_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/support_v4_23_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_2_1.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/proguard-rules.pro" afterPath="$PROJECT_DIR$/app/proguard-rules.pro" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/bocaiweather/app/ApplicationTest.java" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/bocaiweather/app/ApplicationTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/Util/HttpCallBackListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/Util/HttpCallBackListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/Util/HttpUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/Util/HttpUtil.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/NavSettingActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/NavSettingActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/SettingFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/SettingFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/SplashActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/SplashActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_setting.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_setting.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/test/java/com/bocaiweather/app/ExampleUnitTest.java" afterPath="$PROJECT_DIR$/app/src/test/java/com/bocaiweather/app/ExampleUnitTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/xml/searchable.xml" afterPath="$PROJECT_DIR$/app/src/main/res/xml/searchable.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/xml/setting_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/xml/setting_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
     </list>
     <ignored path="bocaiWeather.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -130,202 +70,135 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AbstractWindowedCursor.java" pinned="false" current-in-tab="false">
-        <entry file="file://G:/SDK/sources/android-23/android/database/AbstractWindowedCursor.java">
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/DBManager.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+              <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+              <folding>
+                <element signature="e#434#708#0" expanded="true" />
+                <element signature="e#497#688#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SettingFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/SettingFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SplashActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/SplashActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.7096775">
-              <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActivityTransitionState.java" pinned="false" current-in-tab="false">
-        <entry file="file://G:/SDK/sources/android-23/android/app/ActivityTransitionState.java">
+      <file leaf-file-name="WeatherAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/WeatherAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#12108#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#6873#6874#0" expanded="false" />
-                <element signature="e#6913#6914#0" expanded="false" />
-                <element signature="e#8235#8236#0" expanded="false" />
-                <element signature="e#8271#8272#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Instrumentation.java" pinned="false" current-in-tab="false">
-        <entry file="file://G:/SDK/sources/android-23/android/app/Instrumentation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1106" column="0" selection-start-line="1106" selection-start-column="0" selection-end-line="1106" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#76910#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#6411#6412#0" expanded="false" />
-                <element signature="e#6439#6440#0" expanded="false" />
-                <element signature="e#9114#9115#0" expanded="false" />
-                <element signature="e#9150#9151#0" expanded="false" />
-                <element signature="e#9362#9363#0" expanded="false" />
-                <element signature="e#9395#9396#0" expanded="false" />
-                <element signature="e#9922#9923#0" expanded="false" />
-                <element signature="e#9956#9957#0" expanded="false" />
-                <element signature="e#10174#10175#0" expanded="false" />
-                <element signature="e#10218#10219#0" expanded="false" />
-                <element signature="e#18260#18261#0" expanded="false" />
-                <element signature="e#18297#18298#0" expanded="false" />
-                <element signature="e#18471#18472#0" expanded="false" />
-                <element signature="e#18509#18510#0" expanded="false" />
-                <element signature="e#18730#18731#0" expanded="false" />
-                <element signature="e#18767#18768#0" expanded="false" />
-                <element signature="e#18902#18903#0" expanded="false" />
-                <element signature="e#18938#18939#0" expanded="false" />
-                <element signature="e#19108#19109#0" expanded="false" />
-                <element signature="e#19152#19153#0" expanded="false" />
-                <element signature="e#38172#38173#0" expanded="false" />
-                <element signature="e#38202#38203#0" expanded="false" />
-                <element signature="e#47433#47434#0" expanded="false" />
-                <element signature="e#47467#47468#0" expanded="false" />
-                <element signature="e#47751#47752#0" expanded="false" />
-                <element signature="e#47787#47788#0" expanded="false" />
-                <element signature="e#48782#48783#0" expanded="false" />
-                <element signature="e#48815#48816#0" expanded="false" />
-                <element signature="e#50092#50093#0" expanded="false" />
-                <element signature="e#50131#50132#0" expanded="false" />
-                <element signature="e#50459#50460#0" expanded="false" />
-                <element signature="e#50504#50505#0" expanded="false" />
-                <element signature="e#54171#54172#0" expanded="false" />
-                <element signature="e#54213#54214#0" expanded="false" />
-                <element signature="e#54333#54334#0" expanded="false" />
-                <element signature="e#54375#54376#0" expanded="false" />
-                <element signature="e#73998#73999#0" expanded="false" />
-                <element signature="e#74033#74034#0" expanded="false" />
-                <element signature="e#74919#74920#0" expanded="false" />
-                <element signature="e#74959#74960#0" expanded="false" />
-                <element signature="e#75599#75600#0" expanded="false" />
-                <element signature="e#75639#75640#0" expanded="false" />
-                <element signature="e#75823#75824#0" expanded="false" />
-                <element signature="e#75863#75864#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppCompatActivity.java" pinned="false" current-in-tab="false">
-        <entry file="jar://G:/SDK/extras/android/m2repository/com/android/support/appcompat-v7/23.2.1/appcompat-v7-23.2.1-sources.jar!/android/support/v7/app/AppCompatActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="535" column="0" selection-start-line="535" selection-start-column="0" selection-end-line="535" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#20506#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#4139#4140#0" expanded="false" />
-                <element signature="e#4197#4198#0" expanded="false" />
-                <element signature="e#5320#5321#0" expanded="false" />
-                <element signature="e#5374#5375#0" expanded="false" />
-                <element signature="e#5566#5567#0" expanded="false" />
-                <element signature="e#5616#5617#0" expanded="false" />
-                <element signature="e#6503#6504#0" expanded="false" />
-                <element signature="e#6556#6557#0" expanded="false" />
-                <element signature="e#8072#8073#0" expanded="false" />
-                <element signature="e#8125#8126#0" expanded="false" />
-                <element signature="e#8197#8198#0" expanded="false" />
-                <element signature="e#8250#8251#0" expanded="false" />
-                <element signature="e#18926#18927#0" expanded="false" />
-                <element signature="e#18978#18979#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DisplayMetrics.java" pinned="false" current-in-tab="false">
-        <entry file="file://G:/SDK/sources/android-23/android/util/DisplayMetrics.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="143" column="44" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#12402#0" expanded="false" />
-                <element signature="e#11566#11567#0" expanded="false" />
-                <element signature="e#11628#11629#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <file leaf-file-name="list_view_layout.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_view_layout.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.586207">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+              <folding>
+                <element signature="e#598#836#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_splash.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+              <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SQLiteDatabase.java" pinned="false" current-in-tab="false">
-        <entry file="file://G:/SDK/sources/android-23/android/database/sqlite/SQLiteDatabase.java">
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.6551724">
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+              <folding>
+                <element signature="e#438#1890#0" expanded="true" />
+                <element signature="e#626#1781#0" expanded="true" />
+                <element signature="e#786#1123#0" expanded="false" />
+                <element signature="e#1140#1506#0" expanded="false" />
+                <element signature="e#1523#1725#0" expanded="true" />
+                <element signature="e#1896#2193#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list_item.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.21764033">
+              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+              <folding>
+                <element signature="e#39#415#0" expanded="true" />
+                <element signature="e#264#399#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="1254" column="0" selection-start-line="1254" selection-start-column="0" selection-end-line="1254" selection-end-column="0" />
+              <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
               <folding>
-                <element signature="e#0#94092#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#2982#2983#0" expanded="false" />
-                <element signature="e#3028#3029#0" expanded="false" />
-                <element signature="e#11406#11407#0" expanded="false" />
-                <element signature="e#11436#11437#0" expanded="false" />
-                <element signature="e#12353#12354#0" expanded="false" />
-                <element signature="e#12404#12405#0" expanded="false" />
-                <element signature="e#16301#16302#0" expanded="false" />
-                <element signature="e#16377#16378#0" expanded="false" />
-                <element signature="e#22538#22539#0" expanded="false" />
-                <element signature="e#22566#22567#0" expanded="false" />
-                <element signature="e#25365#25366#0" expanded="false" />
-                <element signature="e#25418#25419#0" expanded="false" />
-                <element signature="e#33641#33642#0" expanded="false" />
-                <element signature="e#33700#33701#0" expanded="false" />
-                <element signature="e#35287#35288#0" expanded="false" />
-                <element signature="e#35344#35345#0" expanded="false" />
-                <element signature="e#74831#74832#0" expanded="false" />
-                <element signature="e#74879#74880#0" expanded="false" />
-                <element signature="e#93110#93111#0" expanded="false" />
-                <element signature="e#93163#93164#0" expanded="false" />
+                <element signature="e#741#893#0" expanded="true" />
+                <element signature="e#899#1128#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head_layout.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/head_layout.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="56" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1602,7 +1475,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4383874380716" />
+        <entry key="$PROJECT_DIR$" value="4387066614000" />
         <entry key="D:\AndroidProject\bocaiWeather" value="4368423334955" />
       </map>
     </option>
@@ -1948,27 +1821,31 @@
         <option value="$PROJECT_DIR$/app/src/main/java/Util/HttpCallBackListener.java" />
         <option value="G:/SDK/extras/android/m2repository/com/android/support/appcompat-v7/23.1.1/appcompat-v7-23.1.1-sources.jar!/android/support/v7/app/AppCompatActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/SettingFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/NavSettingActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/Util/Utility.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_setting.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/DBManager.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/SplashActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/nav_setting.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/NavSettingActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/WeatherAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/listview_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1358" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="754" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -1995,6 +1872,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2012,6 +1891,42 @@
               <option name="myItemId" value="bocaiWeather" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bocaiWeather" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bocaiWeather" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -2025,7 +1940,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2212,7 +2126,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2225,6 +2138,9 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\AndroidProject\bocaiWeather\app\src\main\res\layout" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.app">
@@ -2504,8 +2420,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="false" />
+    <frame x="1358" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.4795022" order="2" side_tool="false" content_ui="tabs" />
@@ -2513,7 +2429,8 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36245954" sideWeight="0.51537335" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31229773" sideWeight="0.48462665" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40729168" sideWeight="0.48462665" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2521,12 +2438,12 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2489019" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12552084" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967638" sideWeight="0.4941435" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.004166667" sideWeight="0.4941435" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -2534,7 +2451,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32847896" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -2585,15 +2501,9 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java</url>
-          <line>20</line>
+          <line>17</line>
           <properties />
           <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java</url>
-          <line>74</line>
-          <properties />
-          <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/DBManager.java</url>
@@ -2625,49 +2535,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/bocaiweather/app/ApplicationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#onNavigationItemSelected#0;class#MainActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/test/java/com/bocaiweather/app/ExampleUnitTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/androidTest/java/com/bocaiweather/app/ApplicationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#onNavigationItemSelected#0;class#MainActivity#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/java/com/bocaiweather/app/ExampleUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2752,7 +2619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="395" column="25" selection-start-line="395" selection-start-column="25" selection-end-line="395" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2760,34 +2626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="428" column="50" selection-start-line="428" selection-start-column="50" selection-end-line="428" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2619047">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.857143">
-          <caret line="33" column="79" selection-start-line="33" selection-start-column="79" selection-end-line="33" selection-end-column="79" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2813,81 +2651,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/SettingFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.392857">
-          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
-          <folding>
-            <element signature="e#330#348#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/NavSettingActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_setting.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.2931035">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="3.310345">
           <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding>
             <element signature="e#743#779#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/head_layout.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8965516">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="15.103448">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2902,17 +2675,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="110" column="24" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="method#onNavigationItemSelected#0;class#MainActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2941,52 +2703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="236" column="0" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#14086#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#3791#3792#0" expanded="false" />
-            <element signature="e#3818#3819#0" expanded="false" />
-            <element signature="e#3867#3868#0" expanded="false" />
-            <element signature="e#3913#3914#0" expanded="false" />
-            <element signature="e#3959#3960#0" expanded="false" />
-            <element signature="e#3996#3997#0" expanded="false" />
-            <element signature="e#4652#4653#0" expanded="false" />
-            <element signature="e#4682#4683#0" expanded="false" />
-            <element signature="e#5403#5404#0" expanded="false" />
-            <element signature="e#5430#5431#0" expanded="false" />
-            <element signature="e#6145#6146#0" expanded="false" />
-            <element signature="e#6170#6171#0" expanded="false" />
-            <element signature="e#6222#6223#0" expanded="false" />
-            <element signature="e#6249#6250#0" expanded="false" />
-            <element signature="e#7214#7215#0" expanded="false" />
-            <element signature="e#7266#7267#0" expanded="false" />
-            <element signature="e#7322#7323#0" expanded="false" />
-            <element signature="e#7362#7363#0" expanded="false" />
-            <element signature="e#7417#7418#0" expanded="false" />
-            <element signature="e#7470#7471#0" expanded="false" />
-            <element signature="e#7525#7526#0" expanded="false" />
-            <element signature="e#7572#7573#0" expanded="false" />
-            <element signature="e#7631#7632#0" expanded="false" />
-            <element signature="e#7678#7679#0" expanded="false" />
-            <element signature="e#7730#7731#0" expanded="false" />
-            <element signature="e#7781#7782#0" expanded="false" />
-            <element signature="e#9412#9413#0" expanded="false" />
-            <element signature="e#9464#9465#0" expanded="false" />
-            <element signature="e#11905#11906#0" expanded="false" />
-            <element signature="e#11933#11934#0" expanded="false" />
-            <element signature="e#11991#11992#0" expanded="false" />
-            <element signature="e#12057#12058#0" expanded="false" />
-            <element signature="e#12104#12105#0" expanded="false" />
-            <element signature="e#12134#12135#0" expanded="false" />
-            <element signature="e#12192#12193#0" expanded="false" />
-            <element signature="e#12227#12228#0" expanded="false" />
-            <element signature="e#12399#12400#0" expanded="false" />
-            <element signature="e#12427#12428#0" expanded="false" />
-            <element signature="e#12598#12599#0" expanded="false" />
-            <element signature="e#12625#12626#0" expanded="false" />
-            <element signature="e#13821#13822#0" expanded="false" />
-            <element signature="e#13857#13858#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3001,15 +2717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3017,30 +2724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1254" column="0" selection-start-line="1254" selection-start-column="0" selection-end-line="1254" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#94092#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#2982#2983#0" expanded="false" />
-            <element signature="e#3028#3029#0" expanded="false" />
-            <element signature="e#11406#11407#0" expanded="false" />
-            <element signature="e#11436#11437#0" expanded="false" />
-            <element signature="e#12353#12354#0" expanded="false" />
-            <element signature="e#12404#12405#0" expanded="false" />
-            <element signature="e#16301#16302#0" expanded="false" />
-            <element signature="e#16377#16378#0" expanded="false" />
-            <element signature="e#22538#22539#0" expanded="false" />
-            <element signature="e#22566#22567#0" expanded="false" />
-            <element signature="e#25365#25366#0" expanded="false" />
-            <element signature="e#25418#25419#0" expanded="false" />
-            <element signature="e#33641#33642#0" expanded="false" />
-            <element signature="e#33700#33701#0" expanded="false" />
-            <element signature="e#35287#35288#0" expanded="false" />
-            <element signature="e#35344#35345#0" expanded="false" />
-            <element signature="e#74831#74832#0" expanded="false" />
-            <element signature="e#74879#74880#0" expanded="false" />
-            <element signature="e#93110#93111#0" expanded="false" />
-            <element signature="e#93163#93164#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3048,11 +2731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="143" column="44" selection-start-line="143" selection-start-column="44" selection-end-line="143" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#12402#0" expanded="false" />
-            <element signature="e#11566#11567#0" expanded="false" />
-            <element signature="e#11628#11629#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3060,24 +2738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="535" column="0" selection-start-line="535" selection-start-column="0" selection-end-line="535" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#20506#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#4139#4140#0" expanded="false" />
-            <element signature="e#4197#4198#0" expanded="false" />
-            <element signature="e#5320#5321#0" expanded="false" />
-            <element signature="e#5374#5375#0" expanded="false" />
-            <element signature="e#5566#5567#0" expanded="false" />
-            <element signature="e#5616#5617#0" expanded="false" />
-            <element signature="e#6503#6504#0" expanded="false" />
-            <element signature="e#6556#6557#0" expanded="false" />
-            <element signature="e#8072#8073#0" expanded="false" />
-            <element signature="e#8125#8126#0" expanded="false" />
-            <element signature="e#8197#8198#0" expanded="false" />
-            <element signature="e#8250#8251#0" expanded="false" />
-            <element signature="e#18926#18927#0" expanded="false" />
-            <element signature="e#18978#18979#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3085,54 +2745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1106" column="0" selection-start-line="1106" selection-start-column="0" selection-end-line="1106" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#76910#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#6411#6412#0" expanded="false" />
-            <element signature="e#6439#6440#0" expanded="false" />
-            <element signature="e#9114#9115#0" expanded="false" />
-            <element signature="e#9150#9151#0" expanded="false" />
-            <element signature="e#9362#9363#0" expanded="false" />
-            <element signature="e#9395#9396#0" expanded="false" />
-            <element signature="e#9922#9923#0" expanded="false" />
-            <element signature="e#9956#9957#0" expanded="false" />
-            <element signature="e#10174#10175#0" expanded="false" />
-            <element signature="e#10218#10219#0" expanded="false" />
-            <element signature="e#18260#18261#0" expanded="false" />
-            <element signature="e#18297#18298#0" expanded="false" />
-            <element signature="e#18471#18472#0" expanded="false" />
-            <element signature="e#18509#18510#0" expanded="false" />
-            <element signature="e#18730#18731#0" expanded="false" />
-            <element signature="e#18767#18768#0" expanded="false" />
-            <element signature="e#18902#18903#0" expanded="false" />
-            <element signature="e#18938#18939#0" expanded="false" />
-            <element signature="e#19108#19109#0" expanded="false" />
-            <element signature="e#19152#19153#0" expanded="false" />
-            <element signature="e#38172#38173#0" expanded="false" />
-            <element signature="e#38202#38203#0" expanded="false" />
-            <element signature="e#47433#47434#0" expanded="false" />
-            <element signature="e#47467#47468#0" expanded="false" />
-            <element signature="e#47751#47752#0" expanded="false" />
-            <element signature="e#47787#47788#0" expanded="false" />
-            <element signature="e#48782#48783#0" expanded="false" />
-            <element signature="e#48815#48816#0" expanded="false" />
-            <element signature="e#50092#50093#0" expanded="false" />
-            <element signature="e#50131#50132#0" expanded="false" />
-            <element signature="e#50459#50460#0" expanded="false" />
-            <element signature="e#50504#50505#0" expanded="false" />
-            <element signature="e#54171#54172#0" expanded="false" />
-            <element signature="e#54213#54214#0" expanded="false" />
-            <element signature="e#54333#54334#0" expanded="false" />
-            <element signature="e#54375#54376#0" expanded="false" />
-            <element signature="e#73998#73999#0" expanded="false" />
-            <element signature="e#74033#74034#0" expanded="false" />
-            <element signature="e#74919#74920#0" expanded="false" />
-            <element signature="e#74959#74960#0" expanded="false" />
-            <element signature="e#75599#75600#0" expanded="false" />
-            <element signature="e#75639#75640#0" expanded="false" />
-            <element signature="e#75823#75824#0" expanded="false" />
-            <element signature="e#75863#75864#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3140,39 +2752,198 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="131" column="0" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#12108#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#6873#6874#0" expanded="false" />
-            <element signature="e#6913#6914#0" expanded="false" />
-            <element signature="e#8235#8236#0" expanded="false" />
-            <element signature="e#8271#8272#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://G:/SDK/sources/android-23/android/database/AbstractWindowedCursor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="-1.0555556">
           <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/DBManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/SplashActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.7096775">
-          <caret line="58" column="48" selection-start-line="58" selection-start-column="48" selection-end-line="58" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.42982456">
+          <caret line="40" column="83" selection-start-line="40" selection-start-column="83" selection-end-line="40" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6111111">
+          <caret line="105" column="23" selection-start-line="105" selection-start-column="23" selection-end-line="105" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/pict.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="3" selection-start-line="26" selection-start-column="3" selection-end-line="26" selection-end-column="47" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1462355538000" expanded="true" signature="49:458" placeholder="{...}" />
+            <marker date="1462355538000" expanded="true" signature="810:813" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="38" selection-start-line="6" selection-start-column="38" selection-end-line="6" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_setting.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/NavSettingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="94" selection-start-line="16" selection-start-column="94" selection-end-line="16" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/SettingFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/WeatherAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding>
+            <element signature="e#741#893#0" expanded="true" />
+            <element signature="e#899#1128#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="46" selection-start-line="22" selection-start-column="46" selection-end-line="22" selection-end-column="46" />
+          <folding>
+            <element signature="e#434#708#0" expanded="true" />
+            <element signature="e#497#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/head_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.6551724">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+          <folding>
+            <element signature="e#438#1890#0" expanded="true" />
+            <element signature="e#626#1781#0" expanded="true" />
+            <element signature="e#786#1123#0" expanded="false" />
+            <element signature="e#1140#1506#0" expanded="false" />
+            <element signature="e#1523#1725#0" expanded="true" />
+            <element signature="e#1896#2193#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_view_layout.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.586207">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <element signature="e#598#836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21764033">
+          <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+          <folding>
+            <element signature="e#39#415#0" expanded="true" />
+            <element signature="e#264#399#0" expanded="true" />
           </folding>
         </state>
       </provider>

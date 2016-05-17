@@ -9,6 +9,9 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -22,6 +25,10 @@ import com.bocaiweather.app.R;
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
     DBManager dbManager = new DBManager(this);
+    RecyclerView recyclerView;
+    private String []data = {"Monday","Tuesday","Wednesday","Thurday","Friday",
+            "Saturday","Sunday" ,"one","two","three","january","february","March"
+            ,"April","May","June","July","August","Set","Oct","analyze","Refactor"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +54,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
         drawer.setDrawerListener(toggle);
+        WeatherAdapter adapter = new WeatherAdapter(data);
+        recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));//这里表明用线性显示
+        recyclerView.setAdapter(adapter);
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
     }
 
 

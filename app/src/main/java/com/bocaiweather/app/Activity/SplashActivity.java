@@ -37,8 +37,8 @@ public class SplashActivity extends AppCompatActivity
         img = (ImageView)findViewById(R.id.Ada);
         img.setImageBitmap(decodeSampledBitmapFromResource(getResources(),
                            R.drawable.ada_lovelace,screenH,screenW));//加载图片
-        fadeOutAndHideImage(img);
-
+        //fadeOutAndHideImage(img);
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         //在主线程消息队列中加入到达延迟时间就跳转到主Activity消息
         new Handler().postDelayed(new Runnable()
         {

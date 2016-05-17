@@ -20,7 +20,7 @@
         <activity
             android:launchMode="singleTop"
             android:name=".Activity.MainActivity"
-            android:theme="@style/MainActivityBackgroundTheme">
+            android:theme="@style/AppBaseTheme">
 
             <meta-data
                 android:name="android.app.searchable"

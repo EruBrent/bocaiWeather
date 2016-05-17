@@ -14,7 +14,7 @@ public class NavSettingActivity extends AppCompatActivity
     public void onCreate (Bundle saveInstanceState){
         super.onCreate(saveInstanceState);
         setContentView(R.layout.nav_setting);
-        getSupportFragmentManager().beginTransaction().replace(R.id.setFragment,new SettingFragment()).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.frame_content,new SettingFragment()).commit();
     }
 }
 
