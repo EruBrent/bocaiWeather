@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/listViewLayout"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-   >
-
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activity.MainActivity">
     <ImageView
-        android:id="@+id/background"
-        android:src="@mipmap/pict"
+        android:id="@+id/testImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerHorizontal="true"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/hua"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
 
-</FrameLayout>
+
+</RelativeLayout>

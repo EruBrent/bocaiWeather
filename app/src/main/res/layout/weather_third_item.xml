@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/WeatherModule"
+    android:layout_margin="10dip">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="天气详情"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:id="@+id/third_divider"
+        style="@style/line"
+        android:layout_below="@+id/label"
+        android:layout_alignParentEnd="true"/>
+    <TextView
+        android:id="@+id/Bodily_sensation"
+        android:text="体感"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="5.0dip"
+        android:gravity="center"
+        android:layout_below="@+id/third_divider"
+        android:layout_toEndOf="@+id/sun_location"
+        android:layout_marginStart="38dp"/>
+    <TextView
+        android:id="@+id/Bodily_sensation_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15"
+        android:layout_alignTop="@+id/Bodily_sensation"
+        android:layout_alignStart="@+id/BarometricPressure_value"/>
+    <ImageView
+        android:id="@+id/third_divider1"
+        style="@style/line"
+        android:layout_toEndOf="@+id/Bodily_sensation"
+        android:layout_below="@+id/Bodily_sensation"
+        android:layout_alignStart="@+id/Bodily_sensation"/>
+
+    <ImageView
+        android:id="@+id/sun_location"
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:src="@drawable/scatttered_thundershowers_day"
+        android:layout_alignTop="@+id/third_divider1"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:id="@+id/humidity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="湿度"
+        android:layout_below="@+id/third_divider1"
+        android:layout_alignStart="@+id/third_divider1"/>
+
+    <TextView
+        android:id="@+id/humidity_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30%"
+        android:layout_alignTop="@+id/humidity"
+        android:layout_alignStart="@+id/Bodily_sensation_value"/>
+
+    <ImageView
+        android:id="@+id/third_divider2"
+        style="@style/line"
+        android:layout_below="@+id/humidity"
+        android:layout_alignStart="@+id/humidity"/>
+
+    <TextView
+        android:id="@+id/BarometricPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="气压"
+        android:layout_below="@+id/third_divider2"
+        android:layout_alignStart="@+id/third_divider2"/>
+
+    <TextView
+        android:id="@+id/BarometricPressure_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1000kpa%"
+        android:layout_marginEnd="43dp"
+        android:layout_alignTop="@+id/BarometricPressure"
+        android:layout_alignEnd="@+id/third_divider2"/>
+
+    <ImageView
+        android:id="@+id/third_divider3"
+        style="@style/line"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/BarometricPressure"
+        android:layout_alignStart="@+id/BarometricPressure"/>
+
+    <TextView
+        android:id="@+id/visibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="能见度"
+        android:layout_below="@+id/third_divider3"
+        android:layout_alignStart="@+id/third_divider3"/>
+
+    <TextView
+        android:id="@+id/visibility_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5km"
+        android:layout_alignTop="@+id/visibility"
+        android:layout_alignStart="@+id/BarometricPressure_value"/>
+</RelativeLayout>

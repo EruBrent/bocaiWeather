@@ -26,7 +26,7 @@
         jar="D:\AndroidProject\bocaiWeather\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="c6cfb58521a651e23aabe69554d948813c055639">
+        sha1="6d8ca44eaefb658ffb37b095dfd671964ec26b2a">
         <dex dex="D:\AndroidProject\bocaiWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_fda8cf0c9fb7658949901baf002f00751d6859b0\classes.dex" />
     </item>
     <item
@@ -68,7 +68,7 @@
         jar="D:\AndroidProject\bocaiWeather\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="e03cd997c2e69a5e1eb915f67deb7cd26ece87e0">
+        sha1="14469ebf822dc069ff28a23892febfcf1d776c56">
         <dex dex="D:\AndroidProject\bocaiWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d7e138ec4545a9f530a9708443ab941941184ca3\classes.dex" />
     </item>
     <item

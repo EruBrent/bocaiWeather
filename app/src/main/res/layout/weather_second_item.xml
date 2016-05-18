@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/WeatherModule"
+    android:layout_margin="10dip">  <!--android:layout_margin="10dip"-->
+
+
+    <TextView
+
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="24小时天气预报"
+        android:layout_marginTop="-4dp"/>
+
+    <ImageView
+       android:id="@+id/divider"
+        android:layout_below="@+id/label"
+        style="@style/line"/>
+
+    <include
+        android:id="@+id/day1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider"
+        layout="@layout/forecast"/>
+    <ImageView
+        android:id="@+id/divider1"
+        style="@style/Line.Dotted"
+        android:layout_below="@+id/day1"/>
+
+    <include
+        android:id="@+id/day2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider1"
+        layout="@layout/forecast"/>
+    <ImageView
+        android:id="@+id/divider2"
+        style="@style/Line.Dotted"
+        android:layout_below="@+id/day2"/>
+
+    <include
+        android:id="@+id/day3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider2"
+        layout="@layout/forecast"/>
+
+    <ImageView
+        android:id="@+id/divider3"
+        style="@style/Line.Dotted"
+        android:layout_below="@+id/day3"/>
+
+    <include
+        android:id="@+id/day4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider3"
+        layout="@layout/forecast"/>
+    <ImageView
+        android:id="@+id/divider4"
+        style="@style/Line.Dotted"
+        android:layout_below="@+id/day4"/>
+
+    <include
+        android:id="@+id/day5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/divider4"
+        layout="@layout/forecast"/>
+    <ImageView
+        android:id="@+id/divider5"
+        style="@style/Line.Dotted"
+        android:layout_below="@+id/day5"/>
+
+</RelativeLayout>

@@ -26,8 +26,26 @@
 
     </style>
 
-
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="WeatherModule">
+        <item name="android:background">@drawable/item_bg</item>
+        <item name="android:padding">12dip</item>
+    </style>
+
+    <style name="line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:src">@color/forecast_gray</item>
+    </style>
+
+    <style name="Line.Dotted" parent="@style/line">
+        <item name="android:layout_marginBottom">0.0dip</item>
+        <item name="android:src">@drawable/dotted_line_624</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
 </resources>

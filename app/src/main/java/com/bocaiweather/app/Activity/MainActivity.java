@@ -3,6 +3,10 @@ package com.bocaiweather.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -17,18 +21,20 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bocaiweather.app.R;
+
+import Util.FastBlur;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
     DBManager dbManager = new DBManager(this);
     RecyclerView recyclerView;
-    private String []data = {"Monday","Tuesday","Wednesday","Thurday","Friday",
-            "Saturday","Sunday" ,"one","two","three","january","february","March"
-            ,"April","May","June","July","August","Set","Oct","analyze","Refactor"};
+    private ImageView image;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        image = (ImageView)findViewById(R.id.testImage);
         /*ToolBarr与DrawerLayout绑定*/
         DrawerLayout drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -54,11 +61,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
         drawer.setDrawerListener(toggle);
-        WeatherAdapter adapter = new WeatherAdapter(data);
+        WeatherAdapter adapter = new WeatherAdapter(this);
         recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));//这里表明用线性显示
         recyclerView.setAdapter(adapter);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
+        recyclerView.addOnScrollListener(new RecyclerViewListener());
     }
 
 
@@ -138,6 +146,55 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    //作用：背景虚化
+    //参考：http://blog.jobbole.com/63894/
+    private void applyBlur() {
+        image.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
+            @Override
+            public boolean onPreDraw() {
+                image.getViewTreeObserver().removeOnPreDrawListener(this);
+                image.buildDrawingCache();
+
+                Bitmap bmp = image.getDrawingCache();
+                blur(bmp, recyclerView);
+
+
+                return true;
+            }
+        });
+    }
+
+
+    private void blur(Bitmap bkg, View view) {
+        long startMs = System.currentTimeMillis();
+        float scaleFactor = 8;//scaleFactor提供了需要缩小的等
+        float radius = 2;
+
+
+        Bitmap overlay = Bitmap.createBitmap((int) (view.getMeasuredWidth()/scaleFactor),
+                (int) (view.getMeasuredHeight()/scaleFactor), Bitmap.Config.ARGB_8888);
+        Canvas canvas = new Canvas(overlay);
+        canvas.translate(-view.getLeft()/scaleFactor, -view.getTop()/scaleFactor);
+        canvas.scale(1 / scaleFactor, 1 / scaleFactor);
+        Paint paint = new Paint();
+        paint.setFlags(Paint.FILTER_BITMAP_FLAG);//进行双缓冲
+        canvas.drawBitmap(bkg, 0, 0, paint);
+
+        overlay = FastBlur.doBlur(overlay, (int)radius, true);
+        view.setBackground(new BitmapDrawable(getResources(), overlay));
+
+    }
+
+
+    //监听RecyclerView滑动
+    public class RecyclerViewListener extends RecyclerView.OnScrollListener{
+        @Override
+        public void onScrolled(RecyclerView recyclerView,int dx,int dy){
+            super.onScrolled(recyclerView,dx,dy);
+            applyBlur();
+        }
     }
 }
 

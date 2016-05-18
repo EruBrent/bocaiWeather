@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:id="@+id/forecast_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:gravity="center_vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/forecast_week"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="周一"/>
+
+        <ImageView
+            android:id="@+id/forecast_image"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="2"
+            android:src ="@drawable/ds_fair_day"/>
+
+        <TextView
+            android:id="@+id/forecast_mintemperature"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:text="13"/>
+
+
+        <TextView
+            android:id="@+id/forecast_maxtemperature"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:gravity="center_vertical"
+            android:text="26"/>
+    </LinearLayout>
+
+</RelativeLayout>
