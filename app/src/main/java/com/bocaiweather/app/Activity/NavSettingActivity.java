@@ -7,6 +7,7 @@ import com.bocaiweather.app.R;
 
 /**
  * Created by oyj on 2016/4/27.
+ * 此类的作用是为了创建设置界面
  */
 public class NavSettingActivity extends AppCompatActivity
 {

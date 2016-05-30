@@ -3,10 +3,6 @@ package com.bocaiweather.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.Canvas;
-import android.graphics.Paint;
-import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -21,30 +17,38 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewTreeObserver;
+import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.bocaiweather.app.R;
 
-import Util.FastBlur;
+import Util.ImageUtil;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
-    DBManager dbManager = new DBManager(this);
-    RecyclerView recyclerView;
+    private DBManager dbManager = new DBManager(this);
+    private ImageUtil imageUtil;
+    private RecyclerView recyclerView;
     private ImageView image;
+    private ImageView blurImage;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);//隐藏状态栏
+        requestWindowFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
+
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         image = (ImageView)findViewById(R.id.testImage);
+        blurImage = (ImageView)findViewById(R.id.blured_image);
+
         /*ToolBarr与DrawerLayout绑定*/
         DrawerLayout drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -52,9 +56,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onDrawerOpened(View drawerView) {super.onDrawerOpened(drawerView);}
             @Override
-            public void onDrawerClosed(View drawerView) {
-                super.onDrawerClosed(drawerView);
-            }
+            public void onDrawerClosed(View drawerView) {super.onDrawerClosed(drawerView);}
         };
         toggle.syncState();
         NavigationView navigationView = (NavigationView)findViewById(R.id.nav_view);
@@ -67,6 +69,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recyclerView.setAdapter(adapter);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.addOnScrollListener(new RecyclerViewListener());
+        imageUtil = new ImageUtil(image,recyclerView,blurImage);
     }
 
 
@@ -88,8 +91,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         //监听searchView
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener(){
-
-
             @Override
             public boolean onQueryTextSubmit(String query){
                 Toast.makeText(MainActivity.this, query, Toast.LENGTH_SHORT).show();
@@ -148,53 +149,31 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-    //作用：背景虚化
-    //参考：http://blog.jobbole.com/63894/
-    private void applyBlur() {
-        image.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
-            @Override
-            public boolean onPreDraw() {
-                image.getViewTreeObserver().removeOnPreDrawListener(this);
-                image.buildDrawingCache();
-
-                Bitmap bmp = image.getDrawingCache();
-                blur(bmp, recyclerView);
 
 
-                return true;
-            }
-        });
-    }
 
 
-    private void blur(Bitmap bkg, View view) {
-        long startMs = System.currentTimeMillis();
-        float scaleFactor = 8;//scaleFactor提供了需要缩小的等
-        float radius = 2;
 
+    /**监听RecyclerView上下滑动，从而改变图片透明值，从而实现虚化效果*/
+    public class RecyclerViewListener extends RecyclerView.OnScrollListener
+    {
 
-        Bitmap overlay = Bitmap.createBitmap((int) (view.getMeasuredWidth()/scaleFactor),
-                (int) (view.getMeasuredHeight()/scaleFactor), Bitmap.Config.ARGB_8888);
-        Canvas canvas = new Canvas(overlay);
-        canvas.translate(-view.getLeft()/scaleFactor, -view.getTop()/scaleFactor);
-        canvas.scale(1 / scaleFactor, 1 / scaleFactor);
-        Paint paint = new Paint();
-        paint.setFlags(Paint.FILTER_BITMAP_FLAG);//进行双缓冲
-        canvas.drawBitmap(bkg, 0, 0, paint);
-
-        overlay = FastBlur.doBlur(overlay, (int)radius, true);
-        view.setBackground(new BitmapDrawable(getResources(), overlay));
-
-    }
-
-
-    //监听RecyclerView滑动
-    public class RecyclerViewListener extends RecyclerView.OnScrollListener{
+        private float alpha;
         @Override
-        public void onScrolled(RecyclerView recyclerView,int dx,int dy){
-            super.onScrolled(recyclerView,dx,dy);
-            applyBlur();
+        public void  onScrolled(RecyclerView recyclerView, int dx, int dy)
+        {
+            super.onScrolled(recyclerView, dx, dy);
+
+            //大于0表示在上滑，小于0表示在下滑
+            if (dy>0) {
+                alpha = 1.0f;
+            } else if (dy < 0) {
+                alpha = 0.0f;
+            }
+
+            blurImage.setAlpha(alpha);
         }
+
     }
 }
 

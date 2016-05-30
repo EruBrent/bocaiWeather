@@ -109,4 +109,5 @@ public class SplashActivity extends AppCompatActivity
 
         img.startAnimation(fadeOut);
     }
+
 }

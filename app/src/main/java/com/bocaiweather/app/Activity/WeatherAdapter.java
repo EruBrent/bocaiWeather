@@ -11,7 +11,8 @@ import android.widget.TextView;
 import com.bocaiweather.app.R;
 
 /**
- * Created by oyj*/
+ * Created by oyj
+ * */
 
 
 public class WeatherAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHolder>
