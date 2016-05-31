@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_search"
+          android:title="menu_search"
+          android:icon="@drawable/ic_action_search"
+          app:showAsAction="ifRoom|collapseActionView"
+          app:actionViewClass="android.support.v7.widget.SearchView" />
+</menu>
+<!--collapseActionView属性表示了这个操作视窗应该被折叠到一个按钮中，只有当用户选择按钮时，这个操作视窗才展开-->
