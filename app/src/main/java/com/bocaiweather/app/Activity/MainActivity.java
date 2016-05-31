@@ -24,6 +24,7 @@ import android.widget.Toast;
 
 import com.bocaiweather.app.R;
 
+import Util.HttpUtil;
 import Util.ImageUtil;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
@@ -33,6 +34,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private RecyclerView recyclerView;
     private ImageView image;
     private ImageView blurImage;
+    private Toolbar toolbar;
+    private String cityid;
+    private NavigationView navigationView;
+    private HttpUtil httpUtil;
 
 
     @Override
@@ -43,13 +48,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         requestWindowFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
 
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         image = (ImageView)findViewById(R.id.testImage);
         blurImage = (ImageView)findViewById(R.id.blured_image);
+        recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
+        navigationView = (NavigationView)findViewById(R.id.nav_view);
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
 
-        /*ToolBarr与DrawerLayout绑定*/
+
+
+        /*ToolBar与DrawerLayout绑定*/
         DrawerLayout drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this,drawer,toolbar,R.string.navigation_drawer_open,R.string.navigation_drawer_close){
@@ -59,17 +68,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onDrawerClosed(View drawerView) {super.onDrawerClosed(drawerView);}
         };
         toggle.syncState();
-        NavigationView navigationView = (NavigationView)findViewById(R.id.nav_view);
+
         navigationView.setNavigationItemSelectedListener(this);
 
         drawer.setDrawerListener(toggle);
         WeatherAdapter adapter = new WeatherAdapter(this);
-        recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
+
         recyclerView.setLayoutManager(new LinearLayoutManager(this));//这里表明用线性显示
         recyclerView.setAdapter(adapter);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.addOnScrollListener(new RecyclerViewListener());
+
         imageUtil = new ImageUtil(image,recyclerView,blurImage);
+        httpUtil = new HttpUtil("101010100");
     }
 
 
@@ -87,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         searchView.setSearchableInfo(
                 searchManager.getSearchableInfo(getComponentName()));
         searchView.setSubmitButtonEnabled(true);
-        searchView.setQueryHint("chazao");
+        searchView.setQueryHint("请输城市名");
 
         //监听searchView
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener(){
@@ -95,15 +106,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public boolean onQueryTextSubmit(String query){
                 Toast.makeText(MainActivity.this, query, Toast.LENGTH_SHORT).show();
                 searchView.clearFocus();
-                String cityid = dbManager.queryCityID(query);
+                 cityid = dbManager.queryCityID(query); //查询数据库，获取城市代号
+                 if (cityid!=null){
+                     httpUtil.getData(cityid);
+                 }
                 return true;
             }
 
             @Override
-            public boolean onQueryTextChange(String newText)
-            {
-                return false;
-            }
+            public boolean onQueryTextChange(String newText) {return false;}
         });
         return true;
     }
@@ -111,11 +122,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     //与上面的 onCreateOptionsMenu（）区别请看：http://blog.csdn.net/qq_23547831/article/details/50483837
     @Override
-    public boolean onPrepareOptionsMenu(Menu menu)
-    {
-        return true;
-    }
-
+    public boolean onPrepareOptionsMenu(Menu menu) {return true;}
 
 
     //onBackPressed()作用为：当我们按下返回键时，如果DrawerLayout是打开的，则关闭它
@@ -150,14 +157,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-
-
-
-
     /**监听RecyclerView上下滑动，从而改变图片透明值，从而实现虚化效果*/
     public class RecyclerViewListener extends RecyclerView.OnScrollListener
     {
-
         private float alpha;
         @Override
         public void  onScrolled(RecyclerView recyclerView, int dx, int dy)
@@ -170,10 +172,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             } else if (dy < 0) {
                 alpha = 0.0f;
             }
-
             blurImage.setAlpha(alpha);
         }
-
     }
 }
 
