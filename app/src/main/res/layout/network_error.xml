@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/networkErrorLayout"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   android:background="@drawable/item_bg"
+    android:paddingBottom="12dp"
+    android:layout_marginTop="365dp"
+    android:layout_alignParentBottom="true">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/errorImage"
+            android:src="@drawable/sadcloud"/>
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="抱歉"
+            android:textSize="25dp"
+            android:layout_alignTop="@+id/errorImage"
+            android:layout_toEndOf="@+id/errorImage"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天气信息不可用"
+            android:layout_below="@+id/tips"
+            android:layout_alignStart="@+id/tips"/>
+
+</RelativeLayout>
