@@ -4,9 +4,11 @@ import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -17,7 +19,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -38,6 +39,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private String cityid;
     private NavigationView navigationView;
     private HttpUtil httpUtil;
+    private Handler mHandler;
+    public  WeatherAdapter adapter;
+    public View errorLayout;
+    public SwipeRefreshLayout refreshLayout;
 
 
     @Override
@@ -45,15 +50,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);//隐藏状态栏
-        requestWindowFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
+       // requestWindowFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
 
         setContentView(R.layout.activity_main);
-
-        image = (ImageView)findViewById(R.id.testImage);
-        blurImage = (ImageView)findViewById(R.id.blured_image);
-        recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
-        navigationView = (NavigationView)findViewById(R.id.nav_view);
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        initView();
         setSupportActionBar(toolbar);
 
 
@@ -72,18 +72,29 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
         drawer.setDrawerListener(toggle);
-        WeatherAdapter adapter = new WeatherAdapter(this);
+        adapter = new WeatherAdapter(this);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));//这里表明用线性显示
         recyclerView.setAdapter(adapter);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.addOnScrollListener(new RecyclerViewListener());
-
-        imageUtil = new ImageUtil(image,recyclerView,blurImage);
+        networkError();
+        imageUtil = new ImageUtil(image,blurImage);
         httpUtil = new HttpUtil("101010100");
     }
 
 
+
+    private void initView()
+    {
+        image = (ImageView)findViewById(R.id.testImage);
+        blurImage = (ImageView)findViewById(R.id.blured_image);
+        recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
+        navigationView = (NavigationView)findViewById(R.id.nav_view);
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
+        errorLayout = (View)findViewById(R.id.networkErrorLayout);
+        refreshLayout = (SwipeRefreshLayout)findViewById(R.id.swiperfresh);
+    }
 
     //下面这个方法的作用是为了让menu在DrawerLayout显示出来
     @Override
@@ -99,6 +110,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 searchManager.getSearchableInfo(getComponentName()));
         searchView.setSubmitButtonEnabled(true);
         searchView.setQueryHint("请输城市名");
+        refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh()
+            {
+
+            }
+        });
 
         //监听searchView
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener(){
@@ -173,6 +191,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 alpha = 0.0f;
             }
             blurImage.setAlpha(alpha);
+        }
+    }
+
+    /**作用：此类告诉程序当网络出现错误时，应该做的事情*/
+    private void networkError(){
+        recyclerView.setVisibility(View.GONE);
+        errorLayout.setVisibility(View.VISIBLE);
+    }
+
+    public class myThread  implements Runnable{
+        @Override
+        public void run(){
+            mHandler.post(new Runnable() {
+                @Override
+                public void run()
+                {
+
+                }
+            });
         }
     }
 }

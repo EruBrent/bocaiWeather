@@ -36,7 +36,7 @@ public class SplashActivity extends AppCompatActivity
         int screenW = getResources().getDisplayMetrics().widthPixels;
         img = (ImageView)findViewById(R.id.Ada);
         img.setImageBitmap(decodeSampledBitmapFromResource(getResources(),
-                           R.drawable.ada_lovelace,screenH,screenW));//加载图片
+                           R.mipmap.ada_lovelace,screenH,screenW));//加载图片
         //fadeOutAndHideImage(img);
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
         //在主线程消息队列中加入到达延迟时间就跳转到主Activity消息
@@ -99,7 +99,7 @@ public class SplashActivity extends AppCompatActivity
             public void onAnimationEnd(Animation animation)
             {
                 nowPicPos %= 2;
-                img.setImageResource(R.drawable.ada_lovelace);
+                img.setImageResource(R.mipmap.ada_lovelace);
 
 
             }

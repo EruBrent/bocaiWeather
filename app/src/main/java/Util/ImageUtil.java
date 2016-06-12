@@ -5,7 +5,6 @@ import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.os.Environment;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
@@ -25,14 +24,14 @@ public class ImageUtil
             PACKAGE_NAME + "/" + DB_NAME;
 
 
-    public ImageUtil(ImageView image, RecyclerView recyclerView, ImageView blurImage){
-        applyBlur(image,recyclerView,blurImage);
+    public ImageUtil(ImageView image, ImageView blurImage){
+        applyBlur(image,blurImage);
     }
 
 
     //作用：背景虚化
     //参考：http://blog.jobbole.com/63894/
-    private void applyBlur(final ImageView image, final RecyclerView recyclerView, final ImageView blurImage) {
+    private void applyBlur(final ImageView image, final ImageView blurImage) {
         image.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
             @Override
             public boolean onPreDraw() {
@@ -40,7 +39,7 @@ public class ImageUtil
                 image.buildDrawingCache();
 
                 Bitmap bmp = image.getDrawingCache();
-                blur(bmp, recyclerView, blurImage);
+                blur(bmp,image, blurImage);
 
 
                 return true;
