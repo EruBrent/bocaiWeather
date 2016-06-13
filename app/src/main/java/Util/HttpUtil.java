@@ -1,12 +1,12 @@
 package Util;
 
-import android.util.Log;
+import android.os.Handler;
 
+import com.bocaiweather.app.Activity.MainActivity;
 import com.bocaiweather.app.Activity.WeatherTest;
 import com.google.gson.Gson;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -22,17 +22,15 @@ import okhttp3.Response;
 public class HttpUtil
 {
 
-    OkHttpClient client = new OkHttpClient();
-    String result;
-    Gson gson =new Gson();
-    WeatherTest weather = new WeatherTest();
-    public  String co = "basic";
-    WeatherTest.WeatherData god;
-
+   private OkHttpClient client = new OkHttpClient();
+   private String result;
+   private Gson gson =new Gson();
+   public  WeatherTest weather = new WeatherTest();
+    Handler m_Handler = new Handler();
     public HttpUtil(String cityID) {getData(cityID);}
 
     //使用OKHttp + GSON 获取数据
-    public void getData(String cityID)
+    public  void getData(String cityID)
     {
         final Request request = new Request.Builder()
                 .url("https://api.heweather.com/x3/weather?cityid=CN" +cityID+
@@ -52,29 +50,20 @@ public class HttpUtil
 
                 result =response.body().string().replace("HeWeather data service 3.0", "WeatherData");//替换掉数据中有空格的部分，不然不能解析
                 weather = gson.fromJson(result,WeatherTest.class);
-                ArrayList<WeatherTest.WeatherData> fuck =  (ArrayList<WeatherTest.WeatherData>) weather.weatherData;
 
-                for(WeatherTest.WeatherData shit : weather.weatherData)
-                {
 
-                    String co= shit.aqi.city.o3;
-                    Log.d("TAF",co);
-                    god = shit;
-                }
-                String city= god.aqi.city.co;
-                Log.d("love",city);
-                Log.d("love",result);
+
+               m_Handler.post(new Runnable() {
+                   @Override
+                   public void run(){  MainActivity.recyclerView.getAdapter().notifyDataSetChanged();}
+
+               });
 
             }
 
         });
 
 
-     /*   try
-        {
-            for (int i = 0; i < fuck.size(); i++)
-                System.out.println(fuck.get(i).aqi.city.co);
-        }catch (Exception e){e.printStackTrace();}*/
     }
 }
 

@@ -24,6 +24,7 @@ public class WeatherAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHolde
     private final int TYPE_THREE = 2;
     private final int TYPE_FORE = 3;
     private Context context;
+    private Context mAContext;
 
 
 
@@ -45,7 +46,15 @@ public class WeatherAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHolde
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position){
         if(holder instanceof firstItem){
-            ((firstItem)holder).text.setText("13℃");
+            try{
+                if(MainActivity.httpUtil.weather!=null)
+                {
+                    for(int i = 0;i<MainActivity.httpUtil.weather.weatherData.size();i++)
+                        ((firstItem)holder).text.setText(MainActivity.httpUtil.weather.weatherData.get(i).now.tmp+"℃");
+                }
+            }catch (Exception e){e.printStackTrace();}
+
+
         }
 
         if (holder instanceof secondItem){

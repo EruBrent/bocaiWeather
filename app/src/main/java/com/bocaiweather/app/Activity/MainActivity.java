@@ -3,6 +3,9 @@ package com.bocaiweather.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.Network;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
@@ -32,19 +35,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 {
     private DBManager dbManager = new DBManager(this);
     private ImageUtil imageUtil;
-    private RecyclerView recyclerView;
+    public static RecyclerView recyclerView;
     private ImageView image;
     private ImageView blurImage;
     private Toolbar toolbar;
     private String cityid;
     private NavigationView navigationView;
-    private HttpUtil httpUtil;
-    private Handler mHandler;
-    public  WeatherAdapter adapter;
+    public static HttpUtil httpUtil;
+    public Handler mHandler = new Handler();
+    public  static WeatherAdapter adapter;
     public View errorLayout;
     public SwipeRefreshLayout refreshLayout;
 
 
+    public void MainActivity (){}
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,8 +59,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         setContentView(R.layout.activity_main);
         initView();
         setSupportActionBar(toolbar);
-
-
 
         /*ToolBar与DrawerLayout绑定*/
         DrawerLayout drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
@@ -78,9 +80,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recyclerView.setAdapter(adapter);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.addOnScrollListener(new RecyclerViewListener());
-        networkError();
-        imageUtil = new ImageUtil(image,blurImage);
-        httpUtil = new HttpUtil("101010100");
+       if(!checkNetwork()){ networkError();}
+        else {
+           imageUtil = new ImageUtil(image,blurImage);
+           httpUtil = new HttpUtil("101010100");
+       }
+        refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh()
+            {
+                refreshLayout.setRefreshing(true);
+                new  Thread(new myThread()).start();
+            }
+        });
+
     }
 
 
@@ -110,13 +123,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 searchManager.getSearchableInfo(getComponentName()));
         searchView.setSubmitButtonEnabled(true);
         searchView.setQueryHint("请输城市名");
-        refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
-            @Override
-            public void onRefresh()
-            {
 
-            }
-        });
+
 
         //监听searchView
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener(){
@@ -127,6 +135,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                  cityid = dbManager.queryCityID(query); //查询数据库，获取城市代号
                  if (cityid!=null){
                      httpUtil.getData(cityid);
+
                  }
                 return true;
             }
@@ -194,12 +203,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-    /**作用：此类告诉程序当网络出现错误时，应该做的事情*/
+
+    /**作用：告诉程序当网络出现错误时，应该做的事情*/
     private void networkError(){
         recyclerView.setVisibility(View.GONE);
         errorLayout.setVisibility(View.VISIBLE);
     }
 
+    /**作用：告诉程序有网络应该怎么做*/
+    private void networkOK(){
+        errorLayout.setVisibility(View.GONE);
+        recyclerView.setVisibility(View.VISIBLE);
+
+    }
     public class myThread  implements Runnable{
         @Override
         public void run(){
@@ -207,10 +223,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 @Override
                 public void run()
                 {
-
+                    recyclerView.getAdapter().notifyDataSetChanged();
+                   // recyclerView.setAdapter(adapter);
+                    refreshLayout.setRefreshing(false);
                 }
             });
         }
+    }
+
+
+    /**检测网络情况*/
+    private boolean checkNetwork(){
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        Network[] network = cm.getAllNetworks();
+        NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+        if(network!=null&&networkInfo!=null)
+            return true;
+        return false;
     }
 }
 
