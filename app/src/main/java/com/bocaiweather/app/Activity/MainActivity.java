@@ -90,6 +90,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onRefresh()
             {
                 refreshLayout.setRefreshing(true);
+                if(checkNetwork()){networkOK();}
+                else {networkError();}
                 new  Thread(new myThread()).start();
             }
         });

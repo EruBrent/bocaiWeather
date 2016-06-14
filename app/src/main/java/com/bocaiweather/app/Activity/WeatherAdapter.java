@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import com.bocaiweather.app.R;
 
@@ -23,8 +24,7 @@ public class WeatherAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHolde
     private final int TYPE_TWO = 1;
     private final int TYPE_THREE = 2;
     private final int TYPE_FORE = 3;
-    private Context context;
-    private Context mAContext;
+    private static Context context;
 
 
 
@@ -58,11 +58,12 @@ public class WeatherAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHolde
         }
 
         if (holder instanceof secondItem){
-            ((secondItem)holder).text.setText("24小时天气预报");
+
+            ((secondItem)holder).forecastWeek[0].setText("今日");
         }
 
         if (holder instanceof thirdItem){
-            ((thirdItem)holder).Bodily_sensation_value.setText("15");
+            ((thirdItem)holder).bodily_sensation_value.setText("15");
         }
     }
 
@@ -113,23 +114,46 @@ public class WeatherAdapter extends  RecyclerView.Adapter<RecyclerView.ViewHolde
 
 
     public static class secondItem extends RecyclerView.ViewHolder{
-        private TextView text;
+        private RelativeLayout forecastLayout;
+        private TextView[] forecastWeek =new TextView[7];
         private ImageView image;
 
         public  secondItem(View v){
             super(v);
-            text = (TextView)v.findViewById(R.id.label);
+            forecastLayout = (RelativeLayout)v.findViewById(R.id.day1);
+
+            for(int i=0;i<7;i++)
+            {
+                View view = View.inflate(context,R.layout.forecast,null);
+                forecastWeek[i] = (TextView) view.findViewById(R.id.forecast_week);
+                forecastLayout.addView(view);
+            }
+
             image = (ImageView)v.findViewById(R.id.divider);
         }
     }
 
     public static class thirdItem extends RecyclerView.ViewHolder{
         private ImageView image;
-        private TextView Bodily_sensation_value;
+        private TextView bodily_sensation_value;
+        private TextView humidity_value;
+        private TextView barometricPressure_value;
+        private TextView visibility_value;
         public  thirdItem(View v){
             super(v);
             image= (ImageView)v.findViewById(R.id.sun_location);
-            Bodily_sensation_value = (TextView)v.findViewById(R.id.Bodily_sensation_value);
+            bodily_sensation_value = (TextView)v.findViewById(R.id.Bodily_sensation_value);
+            humidity_value = (TextView)v.findViewById(R.id.Humidity_value);
+            barometricPressure_value = (TextView)v.findViewById(R.id.BarometricPressure_value);
+            visibility_value = (TextView)v.findViewById(R.id.Visibility_value);
+        }
+    }
+
+    public static class fourthItem extends RecyclerView.ViewHolder{
+        private TextView wind_velocity;
+        public fourthItem(View v){
+            super(v);
+            wind_velocity = (TextView)v.findViewById(R.id.Wind_velocity);
         }
     }
 
