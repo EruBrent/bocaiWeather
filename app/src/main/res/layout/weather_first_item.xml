@@ -26,7 +26,7 @@
         android:layout_marginStart="20dp"/>
 
     <TextView
-        android:id="@+id/temp_high_value"
+        android:id="@+id/temp_high"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text= "10"
@@ -41,8 +41,8 @@
         android:layout_height="wrap_content"
         android:src="@drawable/temp_low"
         android:layout_marginRight="14dp"
-        android:layout_alignTop="@+id/temp_high_value"
-        android:layout_toEndOf="@+id/temp_high_value"
+        android:layout_alignTop="@+id/temp_high"
+        android:layout_toEndOf="@+id/temp_high"
         android:layout_marginStart="38dp"/>
 
     <TextView

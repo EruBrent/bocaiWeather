@@ -33,19 +33,19 @@ import Util.ImageUtil;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
-    private DBManager dbManager = new DBManager(this);
     private ImageUtil imageUtil;
-    public static RecyclerView recyclerView;
+    private Toolbar toolbar;
     private ImageView image;
     private ImageView blurImage;
-    private Toolbar toolbar;
-    private String cityid= "101010100";
-    private NavigationView navigationView;
-    public static HttpUtil httpUtil;
-    public Handler mHandler = new Handler();
-    public  static WeatherAdapter adapter;
+    private String cityid = "101010100";
     public View errorLayout;
+    private NavigationView navigationView;
+    private DBManager dbManager = new DBManager(this);
+    public static HttpUtil httpUtil;
+    public static WeatherAdapter adapter;
+    public Handler mHandler = new Handler();
     public SwipeRefreshLayout refreshLayout;
+    public static RecyclerView recyclerView;
 
 
     public void MainActivity (){}
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);//隐藏状态栏
-       // requestWindowFeature(Window.FEATURE_ACTION_BAR_OVERLAY);
+
 
         setContentView(R.layout.activity_main);
         initView();
@@ -102,12 +102,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private void initView()
     {
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
         image = (ImageView)findViewById(R.id.testImage);
         blurImage = (ImageView)findViewById(R.id.blured_image);
+        errorLayout = (View)findViewById(R.id.networkErrorLayout);
         recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
         navigationView = (NavigationView)findViewById(R.id.nav_view);
-        toolbar = (Toolbar)findViewById(R.id.toolbar);
-        errorLayout = (View)findViewById(R.id.networkErrorLayout);
         refreshLayout = (SwipeRefreshLayout)findViewById(R.id.swiperfresh);
     }
 

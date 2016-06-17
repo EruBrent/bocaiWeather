@@ -1,6 +1,7 @@
 package Util;
 
 import android.os.Handler;
+import android.util.Log;
 
 import com.bocaiweather.app.Activity.MainActivity;
 import com.bocaiweather.app.Activity.WeatherTest;
@@ -22,11 +23,12 @@ import okhttp3.Response;
 public class HttpUtil
 {
 
-   private OkHttpClient client = new OkHttpClient();
-   private String result;
-   private Gson gson =new Gson();
-   public  WeatherTest weather = new WeatherTest();
+    private OkHttpClient client = new OkHttpClient();
+    private String result;
+    private Gson gson = new Gson();
+    public WeatherTest weather = new WeatherTest();
     Handler m_Handler = new Handler();
+
     public HttpUtil(String cityID) {getData(cityID);}
 
     //使用OKHttp + GSON 获取数据
@@ -50,16 +52,18 @@ public class HttpUtil
 
                 result =response.body().string().replace("HeWeather data service 3.0", "WeatherData");//替换掉数据中有空格的部分，不然不能解析
                 weather = gson.fromJson(result,WeatherTest.class);
+                Log.d("love",result);
 
+                m_Handler.post(new Runnable()
+                {
+                    @Override
+                    public void run() { MainActivity.recyclerView.getAdapter().notifyDataSetChanged();}
 
-
-               m_Handler.post(new Runnable() {
-                   @Override
-                   public void run(){  MainActivity.recyclerView.getAdapter().notifyDataSetChanged();}
-
-               });
+                });
 
             }
+
+
 
         });
 

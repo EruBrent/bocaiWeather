@@ -30,21 +30,21 @@
     </item>
     <item
         is-multidex="true"
+        jar="D:\AndroidProject\bocaiWeather\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="4e2046a91a2864c10857428939fcb85426c23460">
+        <dex dex="D:\AndroidProject\bocaiWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d7e138ec4545a9f530a9708443ab941941184ca3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\oyj\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
         jumboMode="true"
         optimize="false"
         revision="23.0.2"
         sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
         <dex dex="D:\AndroidProject\bocaiWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.2.0_7ac5ed0fc9d16e1c0d42675d4466c608e0ae9fec\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="D:\AndroidProject\bocaiWeather\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="23.0.2"
-        sha1="d867f9ec8afae07d0b6fada3ee16f8c4b2848382">
-        <dex dex="D:\AndroidProject\bocaiWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d7e138ec4545a9f530a9708443ab941941184ca3\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -97,7 +97,7 @@
         jumboMode="true"
         optimize="false"
         revision="23.0.2"
-        sha1="4cca66d6543cda8f73ca45556444b9c66917e0e7">
+        sha1="0f67e84abcdcb141e986db0477c352c011c731fa">
         <dex dex="D:\AndroidProject\bocaiWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_fda8cf0c9fb7658949901baf002f00751d6859b0\classes.dex" />
     </item>
     <item
@@ -111,21 +111,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="G:\SDK\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
-        jumboMode="true"
-        optimize="false"
-        revision="23.0.2"
-        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
-        <dex dex="D:\AndroidProject\bocaiWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.2.1_8add03783c8ef427886b06e16832165f72fd1ff8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="D:\AndroidProject\bocaiWeather\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.2.1\jars\classes.jar"
         jumboMode="true"
         optimize="false"
         revision="23.0.2"
         sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
         <dex dex="D:\AndroidProject\bocaiWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.2.1_c6238e93eccd2b26e2158d7c69754627e096a777\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\SDK\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="true"
+        optimize="false"
+        revision="23.0.2"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="D:\AndroidProject\bocaiWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.2.1_8add03783c8ef427886b06e16832165f72fd1ff8\classes.dex" />
     </item>
 
 </items>

@@ -44,6 +44,10 @@
             android:textSize="12sp"
             android:gravity="center_vertical"
             android:text="26"/>
-    </LinearLayout>
 
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/divider2"
+        style="@style/Line.Dotted"
+        android:layout_below="@+id/forecast_layout"/>
 </RelativeLayout>
