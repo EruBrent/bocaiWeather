@@ -39,7 +39,7 @@ public class ImageUtil
                 image.buildDrawingCache();
 
                 Bitmap bmp = image.getDrawingCache();
-                blur(bmp,image, blurImage);
+                blur(bmp,blurImage, blurImage);
 
 
                 return true;
@@ -69,6 +69,7 @@ public class ImageUtil
 
         overlay = FastBlur.doBlur(overlay, (int)radius, true);
         blurImage.setImageBitmap(saveBitmap2file(overlay,DB_PATH));
+        blurImage.setAlpha(0.0f);
         // view.setBackground(new BitmapDrawable(getResources(), overlay));
 
     }

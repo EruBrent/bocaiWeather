@@ -6,24 +6,23 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e8912ce0-6c66-41f8-8bc8-a3ea02165536" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/temp_high.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/temp_low.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/weather_first_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/weather_first_item.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/outputFileStates.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_view_layout.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_view_layout.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/WeatherAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/WeatherAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/weather_third_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/weather_third_item.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/weather_second_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/weather_second_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.10/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/weather_first_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/weather_first_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java" />
     </list>
     <ignored path="bocaiWeather.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,8 +45,8 @@
             <file leaf-file-name="WeatherAdapter.java" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/WeatherAdapter.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="214">
-                    <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
+                  <state relative-caret-position="19">
+                    <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
                     <folding />
                   </state>
                 </provider>
@@ -74,22 +73,31 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="152" column="13" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="-1846">
+              <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
+              <folding>
+                <element signature="e#3348#3680#0" expanded="true" />
+                <element signature="e#3679#3680#0" expanded="true" />
+                <element signature="docComment;class#RecyclerViewListener#0;class#MainActivity#0" expanded="false" />
+                <element signature="docComment;method#networkError#0;class#MainActivity#0" expanded="false" />
+                <element signature="docComment;method#networkOK#0;class#MainActivity#0" expanded="false" />
+                <element signature="docComment;method#checkNetwork#0;class#MainActivity#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav_header_main.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="ImageUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/Util/ImageUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="168">
+              <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="docComment;class#ImageUtil#0" expanded="false" />
+                <element signature="e#1000#1381#0" expanded="true" />
+                <element signature="e#1380#1381#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,29 +108,22 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
+            <state relative-caret-position="513">
               <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-              <folding>
-                <element signature="e#898#1206#0" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_view_layout.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="list_view_layout.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_view_layout.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
-              <folding>
-                <element signature="e#566#945#0" expanded="false" />
-                <element signature="e#955#1250#0" expanded="false" />
-                <element signature="e#1460#1856#0" expanded="false" />
-                <element signature="e#1910#1985#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="494">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -133,24 +134,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-              <folding>
-                <element signature="e#789#1003#0" expanded="false" />
-                <element signature="e#1173#1470#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list_item.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_item.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="15" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="15" />
+            <state relative-caret-position="209">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -162,8 +147,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+            <state relative-caret-position="304">
+              <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -188,8 +173,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="623">
-              <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+            <state relative-caret-position="38">
+              <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -1968,28 +1953,28 @@
         <option value="$PROJECT_DIR$/app/src/main/java/Util/imageUtil.java" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/Util/ImageUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_view_layout.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/SplashActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/Util/HttpUtil.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/weather_fourth_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/weather_third_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/WeatherTest.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/weather_second_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/weather_first_item.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/WeatherAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/head_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/WeatherAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/weather_first_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/list_view_layout.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/Util/ImageUtil.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
-    <option name="y" value="-119" />
-    <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1320" />
+    <option name="height" value="784" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -2016,16 +2001,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -2456,10 +2432,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane />
+      </pane>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
       </pane>
     </panes>
   </component>
@@ -2837,18 +2822,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-119" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1320" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270142" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32089552" sideWeight="0.4795022" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3168" sideWeight="0.4795022" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18095239" sideWeight="0.5094787" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36245954" sideWeight="0.51537335" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35287845" sideWeight="0.48462665" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3514377" sideWeight="0.48462665" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32108626" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251599" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3258786" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2856,7 +2840,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1391258" sideWeight="0.49052134" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1388889" sideWeight="0.49052134" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -2873,6 +2857,7 @@
       <window_info id="CodotaView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31982943" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -3139,16 +3124,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/Util/ImageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
-          <folding>
-            <element signature="docComment;class#ImageUtil#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -3161,466 +3136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="854" column="33" selection-start-line="854" selection-start-column="33" selection-end-line="854" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#480926#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FORCE_INVALIDATE_DISPLAY_LIST#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#TOUCH_SLOP_DEFAULT#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#TOUCH_SLOP_PAGING#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#TRACE_SCROLL_TAG#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#TRACE_ON_LAYOUT_TAG#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#TRACE_ON_DATA_SET_CHANGE_LAYOUT_TAG#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#TRACE_HANDLE_ADAPTER_UPDATES_TAG#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#TRACE_BIND_VIEW_TAG#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#TRACE_CREATE_VIEW_TAG#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mAdapterHelper#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mChildHelper#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mViewInfoStore#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mClipToPadding#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mUpdateChildViewsRunnable#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mDataSetHasChangedAfterLayout#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mLayoutOrScrollCounter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#SCROLL_STATE_IDLE#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#SCROLL_STATE_DRAGGING#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#SCROLL_STATE_SETTLING#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mViewInfoProcessCallback#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getCompatAccessibilityDelegate#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setAccessibilityDelegateCompat#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#createLayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setHasFixedSize#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#hasFixedSize#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setScrollingTouchSlop#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#swapAdapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setAdapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setAdapterInternal#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getAdapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setRecyclerListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getBaseline#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#addOnChildAttachStateChangeListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeOnChildAttachStateChangeListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#clearOnChildAttachStateChangeListeners#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setLayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#dispatchSaveInstanceState#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#dispatchRestoreInstanceState#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#addAnimatingView#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeAnimatingView#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getLayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getRecycledViewPool#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setRecycledViewPool#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setViewCacheExtension#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setItemViewCacheSize#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getScrollState#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#addItemDecoration#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#addItemDecoration#1;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeItemDecoration#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setChildDrawingOrderCallback#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setOnScrollListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#addOnScrollListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeOnScrollListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#clearOnScrollListeners#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#scrollToPosition#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#smoothScrollToPosition#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#consumePendingUpdateOperations#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#hasUpdatedView#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#scrollByInternal#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#computeHorizontalScrollOffset#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#computeHorizontalScrollExtent#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#computeHorizontalScrollRange#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#computeVerticalScrollOffset#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#computeVerticalScrollExtent#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#computeVerticalScrollRange#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setLayoutFrozen#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isLayoutFrozen#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#smoothScrollBy#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#fling#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#stopScroll#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#stopScrollersInternal#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getMinFlingVelocity#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getMaxFlingVelocity#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#pullGlows#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isAttachedToWindow#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#assertInLayoutOrScroll#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#assertNotInLayoutOrScroll#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#addOnItemTouchListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeOnItemTouchListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getScrollFactor#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#defaultOnMeasure#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isComputingLayout#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#shouldDeferAccessibilityEvent#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#postAnimationRunner#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#processAdapterUpdatesAndSetAnimationFlags#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#dispatchLayout#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#dispatchLayoutStep1#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#dispatchLayoutStep2#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#dispatchLayoutStep3#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#handleMissingPreInfoForChangeError#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#recordAnimationInfoIfBouncedHiddenView#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getChangedHolderKey#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isAnimating#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#viewRangeUpdate#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#markKnownViewsInvalid#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#invalidateItemDecorations#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getChildViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#findContainingItemView#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#findContainingViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getChildPosition#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getChildAdapterPosition#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getChildLayoutPosition#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getChildItemId#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#findViewHolderForPosition#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#findViewHolderForLayoutPosition#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#findViewHolderForAdapterPosition#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#findViewHolderForItemId#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#findChildViewUnder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#offsetChildrenVertical#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onChildAttachedToWindow#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onChildDetachedFromWindow#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#offsetChildrenHorizontal#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onScrolled#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onScrollStateChanged#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#hasPendingAdapterUpdates#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#RecycledViewPool#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onAdapterChanged#0;class#RecycledViewPool#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#clear#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setViewCacheSize#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getScrapList#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#validateViewHolderForOffsetPosition#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#bindViewToPosition#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#convertPreLayoutPositionToPostLayout#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getViewForPosition#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#recycleView#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#recycleViewInternal#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#recycleCachedViewAt#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#recycleViewHolderInternal#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#quickRecycleScrapView#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#scrapView#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#unscrapView#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getScrapViewForPosition#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#offsetPositionRecordsForRemove#0;class#Recycler#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#ViewCacheExtension#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getViewForPositionAndType#0;class#ViewCacheExtension#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onCreateViewHolder#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onBindViewHolder#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onBindViewHolder#1;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#createViewHolder#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#bindViewHolder#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getItemViewType#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setHasStableIds#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getItemId#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getItemCount#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#hasStableIds#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onViewRecycled#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onFailedToRecycleView#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onViewAttachedToWindow#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onViewDetachedFromWindow#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#hasObservers#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#registerAdapterDataObserver#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#unregisterAdapterDataObserver#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onAttachedToRecyclerView#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onDetachedFromRecyclerView#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#notifyDataSetChanged#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#notifyItemChanged#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#notifyItemChanged#1;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#notifyItemRangeChanged#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#notifyItemRangeChanged#1;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#notifyItemInserted#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#notifyItemMoved#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#notifyItemRangeInserted#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#notifyItemRemoved#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#notifyItemRangeRemoved#0;class#Adapter#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mMeasurementCacheEnabled#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mWidthSpec#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setMeasuredDimensionFromChildren#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setMeasuredDimension#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#requestLayout#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#assertInLayoutOrScroll#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#chooseSize#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#assertNotInLayoutOrScroll#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setAutoMeasureEnabled#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isAutoMeasureEnabled#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#supportsPredictiveItemAnimations#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isAttachedToWindow#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#postOnAnimation#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeCallbacks#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onAttachedToWindow#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onDetachedFromWindow#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onDetachedFromWindow#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getClipToPadding#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onLayoutChildren#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#generateDefaultLayoutParams#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#checkLayoutParams#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#generateLayoutParams#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#generateLayoutParams#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#scrollHorizontallyBy#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#scrollVerticallyBy#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#canScrollHorizontally#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#canScrollVertically#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#scrollToPosition#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#smoothScrollToPosition#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#startSmoothScroll#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isSmoothScrolling#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getLayoutDirection#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#endAnimation#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#addDisappearingView#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#addDisappearingView#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#addView#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#addView#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeView#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeViewAt#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeAllViews#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getBaseline#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getPosition#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getItemViewType#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#findContainingItemView#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#findViewByPosition#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#detachView#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#detachViewAt#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#attachView#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#attachView#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#attachView#2;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeDetachedView#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#moveView#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#detachAndScrapView#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#detachAndScrapViewAt#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeAndRecycleView#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeAndRecycleViewAt#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getChildCount#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getChildAt#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getWidthMode#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getHeightMode#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getWidth#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getHeight#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getPaddingLeft#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getPaddingTop#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getPaddingRight#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getPaddingBottom#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getPaddingStart#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getPaddingEnd#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isFocused#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#hasFocus#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getFocusedChild#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getItemCount#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#offsetChildrenHorizontal#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#offsetChildrenVertical#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#ignoreView#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#stopIgnoringView#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#detachAndScrapAttachedViews#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeAndRecycleScrapInt#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#measureChild#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#shouldReMeasureChild#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#shouldMeasureChild#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isMeasurementCacheEnabled#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setMeasurementCacheEnabled#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#measureChildWithMargins#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getChildMeasureSpec#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getChildMeasureSpec#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getDecoratedMeasuredWidth#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getDecoratedMeasuredHeight#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#layoutDecorated#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getDecoratedLeft#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getDecoratedTop#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getDecoratedRight#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getDecoratedBottom#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#calculateItemDecorationsForChild#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getTopDecorationHeight#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getBottomDecorationHeight#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getLeftDecorationWidth#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getRightDecorationWidth#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onFocusSearchFailed#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onInterceptFocusSearch#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#requestChildRectangleOnScreen#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onRequestChildFocus#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onRequestChildFocus#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onAdapterChanged#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onAddFocusables#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onItemsChanged#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onItemsAdded#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onItemsRemoved#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onItemsUpdated#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onItemsUpdated#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onItemsMoved#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#computeHorizontalScrollExtent#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#computeHorizontalScrollOffset#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#computeHorizontalScrollRange#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#computeVerticalScrollExtent#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#computeVerticalScrollOffset#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#computeVerticalScrollRange#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onMeasure#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setMeasuredDimension#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getMinimumWidth#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getMinimumHeight#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onSaveInstanceState#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onScrollStateChanged#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#removeAndRecycleAllViews#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onInitializeAccessibilityNodeInfo#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onInitializeAccessibilityEvent#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onInitializeAccessibilityNodeInfoForItem#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#requestSimpleAnimationsInNextLayout#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getSelectionModeForAccessibility#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getRowCountForAccessibility#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getColumnCountForAccessibility#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isLayoutHierarchical#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#performAccessibilityAction#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#performAccessibilityActionForItem#1;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getProperties#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#shouldMeasureTwice#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#Properties#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#orientation#0;class#Properties#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#spanCount#0;class#Properties#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#reverseLayout#0;class#Properties#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#stackFromEnd#0;class#Properties#0;class#LayoutManager#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#ItemDecoration#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onDraw#0;class#ItemDecoration#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onDraw#1;class#ItemDecoration#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onDrawOver#0;class#ItemDecoration#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onDrawOver#1;class#ItemDecoration#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getItemOffsets#0;class#ItemDecoration#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getItemOffsets#1;class#ItemDecoration#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#OnItemTouchListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onInterceptTouchEvent#0;class#OnItemTouchListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onTouchEvent#0;class#OnItemTouchListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onRequestDisallowInterceptTouchEvent#0;class#OnItemTouchListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#SimpleOnItemTouchListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#OnScrollListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onScrollStateChanged#0;class#OnScrollListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onScrolled#0;class#OnScrollListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#RecyclerListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onViewRecycled#0;class#RecyclerListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#OnChildAttachStateChangeListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onChildViewAttachedToWindow#0;class#OnChildAttachStateChangeListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onChildViewDetachedFromWindow#0;class#OnChildAttachStateChangeListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_BOUND#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_UPDATE#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_INVALID#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_REMOVED#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_NOT_RECYCLABLE#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_RETURNED_FROM_SCRAP#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_IGNORE#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_TMP_DETACHED#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_ADAPTER_POSITION_UNKNOWN#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_ADAPTER_FULLUPDATE#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_MOVED#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_APPEARED_IN_PRE_LAYOUT#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_BOUNCED_FROM_HIDDEN_LIST#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mOwnerRecyclerView#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getPosition#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getLayoutPosition#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getAdapterPosition#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getOldPosition#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getItemId#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getItemViewType#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onEnteredHiddenState#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onLeftHiddenState#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setIsRecyclable#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isRecyclable#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#shouldBeKeptAsChild#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#doesTransientStatePreventRecycling#0;class#ViewHolder#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#LayoutParams#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#viewNeedsUpdate#0;class#LayoutParams#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isViewInvalid#0;class#LayoutParams#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isItemRemoved#0;class#LayoutParams#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isItemChanged#0;class#LayoutParams#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getViewPosition#0;class#LayoutParams#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getViewLayoutPosition#0;class#LayoutParams#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getViewAdapterPosition#0;class#LayoutParams#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#AdapterDataObserver#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#start#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getLayoutManager#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#stop#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isPendingInitialRun#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isRunning#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getTargetPosition#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getChildPosition#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getChildCount#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#findViewByPosition#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#instantScrollToPosition#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#normalize#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onStart#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onStop#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onSeekTargetStep#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onTargetFound#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#Action#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#Action#0;class#Action#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#Action#1;class#Action#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#Action#2;class#Action#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#jumpTo#0;class#Action#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setInterpolator#0;class#Action#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#update#0;class#Action#0;class#SmoothScroller#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#SavedState#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#SavedState#0;class#SavedState#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#SavedState#1;class#SavedState#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mItemCount#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mPreviousLayoutItemCount#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#mDeletedInvisibleItemCountSincePreviousLayout#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isMeasuring#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isPreLayout#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#willRunPredictiveAnimations#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#willRunSimpleAnimations#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#remove#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#get#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#put#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getTargetScrollPosition#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#hasTargetScrollPosition#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#didStructureChange#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getItemCount#0;class#State#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#ItemAnimatorRestoreListener#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_CHANGED#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_REMOVED#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_INVALIDATED#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_MOVED#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#FLAG_APPEARED_IN_PRE_LAYOUT#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#AdapterChanges#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getMoveDuration#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setMoveDuration#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getAddDuration#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setAddDuration#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getRemoveDuration#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setRemoveDuration#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#getChangeDuration#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setChangeDuration#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setListener#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#recordPreLayoutInformation#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#recordPostLayoutInformation#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#animateDisappearance#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#animateAppearance#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#animatePersistence#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#animateChange#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#runPendingAnimations#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#endAnimation#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#endAnimations#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isRunning#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#dispatchAnimationFinished#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onAnimationFinished#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#dispatchAnimationStarted#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onAnimationStarted#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#isRunning#1;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#canReuseUpdatedViewHolder#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#canReuseUpdatedViewHolder#1;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#dispatchAnimationsFinished#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#obtainHolderInfo#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#ItemAnimatorListener#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#ItemAnimatorFinishedListener#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#ItemHolderInfo#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#left#0;class#ItemHolderInfo#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#top#0;class#ItemHolderInfo#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#right#0;class#ItemHolderInfo#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#bottom#0;class#ItemHolderInfo#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;field#changeFlags#0;class#ItemHolderInfo#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setFrom#0;class#ItemHolderInfo#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#setFrom#1;class#ItemHolderInfo#0;class#ItemAnimator#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;class#ChildDrawingOrderCallback#0;class#RecyclerView#0" expanded="false" />
-            <element signature="docComment;method#onGetChildDrawingOrder#0;class#ChildDrawingOrderCallback#0;class#RecyclerView#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3645,13 +3160,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/SplashActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1729">
+        <state relative-caret-position="0">
           <caret line="109" column="22" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="docComment;class#SplashActivity#0" expanded="false" />
-            <element signature="docComment;method#decodeSampledBitmapFromResource#0;class#SplashActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3670,20 +3180,17 @@
         <state relative-caret-position="0">
           <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="34" />
           <folding>
-            <element signature="e#271#556#0" expanded="true" />
-            <element signature="e#562#732#0" expanded="true" />
-            <element signature="e#737#1049#0" expanded="true" />
-            <element signature="e#1054#1398#0" expanded="true" />
+            <element signature="e#271#556#0" expanded="false" />
+            <element signature="e#562#732#0" expanded="false" />
+            <element signature="e#737#1049#0" expanded="false" />
+            <element signature="e#1054#1398#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/weather_third_item.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1862">
+        <state relative-caret-position="0">
           <caret line="98" column="61" selection-start-line="98" selection-start-column="61" selection-end-line="98" selection-end-column="61" />
           <folding />
         </state>
@@ -3691,19 +3198,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/WeatherTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1843">
+        <state relative-caret-position="0">
           <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/weather_second_item.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
           <folding />
         </state>
       </provider>
@@ -3724,29 +3220,35 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/WeatherAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="142" column="21" selection-start-line="142" selection-start-column="21" selection-end-line="142" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/weather_first_item.xml">
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
+        <state relative-caret-position="38">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/weather_second_item.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="152" column="13" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
+        <state relative-caret-position="304">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/head_layout.xml">
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3759,19 +3261,6 @@
         <state relative-caret-position="57">
           <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/head_layout.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#898#1206#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -3791,12 +3280,9 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="27" column="42" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
-          <folding>
-            <element signature="e#789#1003#0" expanded="false" />
-            <element signature="e#1173#1470#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="209">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -3805,13 +3291,44 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="43" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        <state relative-caret-position="494">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/WeatherAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/bocaiweather/app/Activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1846">
+          <caret line="96" column="11" selection-start-line="96" selection-start-column="11" selection-end-line="96" selection-end-column="11" />
           <folding>
-            <element signature="e#566#945#0" expanded="false" />
-            <element signature="e#955#1250#0" expanded="false" />
-            <element signature="e#1460#1856#0" expanded="false" />
-            <element signature="e#1910#1985#0" expanded="false" />
+            <element signature="e#3348#3680#0" expanded="true" />
+            <element signature="e#3679#3680#0" expanded="true" />
+            <element signature="docComment;class#RecyclerViewListener#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#networkError#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#networkOK#0;class#MainActivity#0" expanded="false" />
+            <element signature="docComment;method#checkNetwork#0;class#MainActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/Util/ImageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="71" column="31" selection-start-line="71" selection-start-column="31" selection-end-line="71" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;class#ImageUtil#0" expanded="false" />
+            <element signature="e#1000#1381#0" expanded="true" />
+            <element signature="e#1380#1381#0" expanded="true" />
           </folding>
         </state>
       </provider>

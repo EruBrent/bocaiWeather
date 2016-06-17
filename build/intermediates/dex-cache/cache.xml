@@ -43,7 +43,7 @@
         jumboMode="true"
         optimize="false"
         revision="23.0.2"
-        sha1="e74ea44ff90e891f180155a2267c62f0198ba5a6">
+        sha1="d867f9ec8afae07d0b6fada3ee16f8c4b2848382">
         <dex dex="D:\AndroidProject\bocaiWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_d7e138ec4545a9f530a9708443ab941941184ca3\classes.dex" />
     </item>
     <item
@@ -97,7 +97,7 @@
         jumboMode="true"
         optimize="false"
         revision="23.0.2"
-        sha1="8308899e7fb42c11e7de5a175ba88a3467680ec8">
+        sha1="4cca66d6543cda8f73ca45556444b9c66917e0e7">
         <dex dex="D:\AndroidProject\bocaiWeather\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_fda8cf0c9fb7658949901baf002f00751d6859b0\classes.dex" />
     </item>
     <item

@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private ImageView image;
     private ImageView blurImage;
     private Toolbar toolbar;
-    private String cityid;
+    private String cityid= "101010100";
     private NavigationView navigationView;
     public static HttpUtil httpUtil;
     public Handler mHandler = new Handler();
@@ -82,8 +82,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recyclerView.addOnScrollListener(new RecyclerViewListener());
        if(!checkNetwork()){ networkError();}
         else {
+           httpUtil = new HttpUtil(cityid);
            imageUtil = new ImageUtil(image,blurImage);
-           httpUtil = new HttpUtil("101010100");
        }
         refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
