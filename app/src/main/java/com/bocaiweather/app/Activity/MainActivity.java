@@ -41,12 +41,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public View errorLayout;
     private NavigationView navigationView;
     private DBManager dbManager = new DBManager(this);
-    public static HttpUtil httpUtil;
+    public static HttpUtil httpUtil = new HttpUtil();
     public static WeatherAdapter adapter;
     public Handler mHandler = new Handler();
     public SwipeRefreshLayout refreshLayout;
     public static RecyclerView recyclerView;
 
+    //public  OtherUtil otherUtil = new OtherUtil();
 
     public void MainActivity (){}
     @Override
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recyclerView.addOnScrollListener(new RecyclerViewListener());
        if(!checkNetwork()){ networkError();}
         else {
-           httpUtil = new HttpUtil(cityid);
+           httpUtil.getData(cityid);
            imageUtil = new ImageUtil(image,blurImage);
        }
         refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
@@ -90,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onRefresh()
             {
                 refreshLayout.setRefreshing(true);
-                if(checkNetwork()){networkOK();}
+                if(checkNetwork()){networkOK();httpUtil.getData(cityid);}
                 else {networkError();}
                 new  Thread(new myThread()).start();
             }
@@ -109,8 +110,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
         navigationView = (NavigationView)findViewById(R.id.nav_view);
         refreshLayout = (SwipeRefreshLayout)findViewById(R.id.swiperfresh);
+
     }
 
+/**----------------------------我的名字是分割线------------------------------------------------*/
     //下面这个方法的作用是为了让menu在DrawerLayout显示出来
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
@@ -127,7 +130,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         searchView.setQueryHint("请输城市名");
 
 
-
+/**----------------------------我的名字是分割线------------------------------------------------*/
         //监听searchView
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener(){
             @Override
@@ -148,12 +151,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-
+/**----------------------------我的名字是分割线------------------------------------------------*/
     //与上面的 onCreateOptionsMenu（）区别请看：http://blog.csdn.net/qq_23547831/article/details/50483837
     @Override
     public boolean onPrepareOptionsMenu(Menu menu) {return true;}
 
-
+/**----------------------------我的名字是分割线------------------------------------------------*/
     //onBackPressed()作用为：当我们按下返回键时，如果DrawerLayout是打开的，则关闭它
     @Override
     public void onBackPressed()
@@ -216,8 +219,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void networkOK(){
         errorLayout.setVisibility(View.GONE);
         recyclerView.setVisibility(View.VISIBLE);
-
     }
+
+/**----------------------------我的名字是分割线------------------------------------------------*/
     public class myThread  implements Runnable{
         @Override
         public void run(){
@@ -225,8 +229,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 @Override
                 public void run()
                 {
-                    recyclerView.getAdapter().notifyDataSetChanged();
-                   // recyclerView.setAdapter(adapter);
+                    //recyclerView.getAdapter().notifyDataSetChanged();
+                    recyclerView.setAdapter(adapter);
                     refreshLayout.setRefreshing(false);
                 }
             });

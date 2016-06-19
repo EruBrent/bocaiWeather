@@ -1,18 +1,22 @@
 package com.bocaiweather.app.Activity;
 
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.LinearInterpolator;
+import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bocaiweather.app.R;
 
-import Util.OtherUtil;
+import Util.myApplication;
 
 /**
  * Created by oyj
@@ -28,7 +32,9 @@ public class WeatherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     private final int TYPE_THREE = 2;
     private final int TYPE_FORE = 3;
     private static Context context;
-    private OtherUtil otherUtil = new OtherUtil();
+
+    private Animation animation;
+    private  int int_wind=1;
 
 
     @Override
@@ -41,7 +47,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         if (viewType == TYPE_THREE)
             return new thirdItem(LayoutInflater.from(context).inflate(R.layout.weather_third_item, parent, false));
         if (viewType == TYPE_FORE)
-            return new thirdItem(LayoutInflater.from(context).inflate(R.layout.weather_fourth_item, parent, false));
+            return new fourthItem(LayoutInflater.from(context).inflate(R.layout.weather_fourth_item, parent, false));
         return null;
     }
 
@@ -72,6 +78,8 @@ public class WeatherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
 
         }
 
+
+/**----------------------------我的名字是分割线------------------------------------------------*/
         if (holder instanceof secondItem)
         {
             try
@@ -83,34 +91,60 @@ public class WeatherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                     for (int i = 0; i < 7; i++)
                     {
                         if (i > 1)
-
                             for (WeatherTest.WeatherData temp : MainActivity.httpUtil.weather.weatherData)
                                 ((secondItem) holder).forecastWeek[i].
-                                        setText(otherUtil.dayForWeek(temp.dailyForecast.get(i).date));
+                                        setText(myApplication.otherUtil.dayForWeek(temp.dailyForecast.get(i).date));
 
+                        for (WeatherTest.WeatherData temp :MainActivity.httpUtil.weather.weatherData){
+                            ((secondItem)holder).forecastMin[i].
+                                    setText(temp.dailyForecast.get(i).tmp.min);
+                            ((secondItem)holder).forecastMax[i].
+                                    setText(temp.dailyForecast.get(i).tmp.max);
+                        }
                     }
-
                 }
-
             } catch (Exception e) {e.printStackTrace();}
-
         }
 
+
+/**----------------------------我的名字是分割线------------------------------------------------*/
         if (holder instanceof thirdItem)
         {
-            // ((thirdItem)holder).bodily_sensation_value.setText("15");
+            try
+            { if (MainActivity.httpUtil.weather != null)
+                {
+                    for (WeatherTest.WeatherData temp : MainActivity.httpUtil.weather.weatherData)
+                    {
+                        ((thirdItem) holder).bodily_sensation_value.setText(temp.now.fl+"℃" );
+                        ((thirdItem) holder).humidity_value.setText(temp.now.hum + "%");
+                        ((thirdItem) holder).barometricPressure_value.setText(temp.now.pres + "mbar");
+                        ((thirdItem) holder).visibility_value.setText(temp.now.vis + "km");
+                    }
+                 }
+            }catch (Exception e){e.printStackTrace();}
         }
 
+/**----------------------------我的名字是分割线------------------------------------------------*/
         if (holder instanceof fourthItem)
         {
-            if (MainActivity.httpUtil.weather != null)
+            try
             {
-                for (int i = 0; i < MainActivity.httpUtil.weather.weatherData.size(); i++)
+                if (MainActivity.httpUtil.weather != null)
                 {
-                    ((fourthItem) holder).wind_velocity.setText(MainActivity.
-                            httpUtil.weather.weatherData.get(i).now.wind.spd + "km/h");
+                    for (WeatherTest.WeatherData temp:MainActivity.httpUtil.weather.weatherData)
+                    {
+                        ((fourthItem) holder).wind_velocity.setText("风速: " + temp.now.wind.spd+"km/h" );
+                        int_wind = Integer.parseInt(temp.now.hum);
+                    }
+                    int temp_value=int_wind/10; //如果直接给animation使用，那么将会使得出来的值不是359的倍数，从而导致出现卡顿效果，所以在这里先把它转化为整数
+                    animation = new RotateAnimation(0f,359f*temp_value,
+                            Animation.RELATIVE_TO_SELF,0.5f,Animation.RELATIVE_TO_SELF,0.5f);
+                    animation.setDuration(3000); //转动持续时间
+                    animation.setRepeatCount(ValueAnimator.INFINITE); //设置为永不停止模式
+                    animation.setInterpolator(new LinearInterpolator()); //设置为匀速转动
+                    ((fourthItem)holder).Blade.startAnimation(animation);
                 }
-            }
+            }catch (Exception e){e.printStackTrace();}
         }
     }
 
@@ -169,6 +203,8 @@ public class WeatherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     {
         private LinearLayout forecastLayout;
         private TextView[] forecastWeek = new TextView[7];
+        private TextView[] forecastMin = new TextView[7]; //未来几天的最低温度
+        private TextView[] forecastMax = new TextView[7];
         private TextView textView;
         private ImageView image;
 
@@ -182,6 +218,8 @@ public class WeatherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 LayoutInflater layoutInflater = LayoutInflater.from(context);
                 View view = layoutInflater.inflate(R.layout.forecast, null);
                 forecastWeek[i] = (TextView) view.findViewById(R.id.forecast_week);
+                forecastMin[i] = (TextView)view.findViewById(R.id.forecast_mintemperature);
+                forecastMax[i] = (TextView)view.findViewById(R.id.forecast_maxtemperature);
                 forecastLayout.addView(view);
             }
             forecastLayout.setVisibility(View.VISIBLE);
@@ -211,11 +249,13 @@ public class WeatherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
     public static class fourthItem extends RecyclerView.ViewHolder
     {
         private TextView wind_velocity;
+        private ImageView Blade;
 
         public fourthItem(View v)
         {
             super(v);
             wind_velocity = (TextView) v.findViewById(R.id.Wind_velocity);
+           Blade = (ImageView)v.findViewById(R.id.blade);
         }
     }
 

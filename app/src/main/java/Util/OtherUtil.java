@@ -1,5 +1,12 @@
 package Util;
 
+import android.content.Context;
+import android.content.SharedPreferences;
+
+import com.bocaiweather.app.Activity.DBManager;
+import com.bocaiweather.app.R;
+
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -10,7 +17,19 @@ import java.util.Calendar;
 
 public class OtherUtil
 {
-    public OtherUtil(){}
+    private SharedPreferences sp ;
+    private String ico_cityData = "ico_city.xml";
+
+    public OtherUtil(){
+        if (!new File(DBManager.DB_PATH +ico_cityData).exists()) {
+            sp = myApplication.BaseContext.getSharedPreferences("ico_city",Context.MODE_PRIVATE);
+            initIco_data();
+        }
+    }
+
+
+
+
     /**
      * 判断当前日期是星期几
      *
@@ -49,5 +68,34 @@ public class OtherUtil
                 break;
         }
         return week;
+    }
+
+    private void initIco_data()
+    {
+      putIcoData("晴", R.mipmap.ds_clear_day);
+      putIcoData("阴", R.mipmap.ds_cloudy_day_night);
+      putIcoData("多云", R.mipmap.ds_fair_day);
+      putIcoData("小雨", R.mipmap.ds_light_rain_day_night);
+      putIcoData("中雨", R.mipmap.ds_freezing_rain_day_night);
+      putIcoData("大雨", R.mipmap.ds_heavy_rain_day_night);
+      putIcoData("雷阵雨", R.mipmap.ds_thundershowers_day_night);
+      putIcoData("霾", R.mipmap.ds_haze_day_night);
+      putIcoData("雾", R.mipmap.ds_fog_sun_day);
+    }
+    public void  putIcoData(String key, int value){
+        sp.edit().putInt(key,value).apply();
+    }
+
+    public int getIconData(String key, int value){
+        return sp.getInt(key, value);
+    }
+
+    public void saveCity(String key, String value) {
+       sp.edit().putString(key, value).apply();
+
+    }
+
+    public String getCity(String key, String defValue) {
+        return sp.getString(key, defValue);
     }
 }

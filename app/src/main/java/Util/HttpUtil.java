@@ -31,6 +31,8 @@ public class HttpUtil
 
     public HttpUtil(String cityID) {getData(cityID);}
 
+    public HttpUtil(){};
+
     //使用OKHttp + GSON 获取数据
     public  void getData(String cityID)
     {

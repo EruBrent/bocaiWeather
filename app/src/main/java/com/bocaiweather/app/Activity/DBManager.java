@@ -23,7 +23,7 @@ public class DBManager
 {
     private static String TAG = DBManager.class.getSimpleName();
     private final int BUFFER_SIZE = 400000;
-    public static final String DB_NAME = "cityname.db"; //数据库名字
+    public final String DB_NAME = "cityname.db"; //数据库名字
     public static final String PACKAGE_NAME = "com.bocaiweather.app";
     public static final String DB_PATH = "/data" + Environment.getDataDirectory().getAbsolutePath() + "/" +
             PACKAGE_NAME;
