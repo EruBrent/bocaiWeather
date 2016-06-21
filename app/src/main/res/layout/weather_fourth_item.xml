@@ -33,14 +33,10 @@
         android:src="@drawable/smallpole"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="71dp"
-        android:layout_marginEnd="39dp"
-        android:layout_alignTop="@+id/blade"
-        android:layout_alignEnd="@+id/blade"
-        android:layout_alignParentStart="false"
-        android:layout_alignParentEnd="false"
-
-       />
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="2dp"
+        android:layout_below="@+id/Wind_velocity"
+        android:layout_toEndOf="@+id/four_lab"/>
 <TextView
     android:id="@+id/Wind_velocity"
     android:text="风速：40km/h"

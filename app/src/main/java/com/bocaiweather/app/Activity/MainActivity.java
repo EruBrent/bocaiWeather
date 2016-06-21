@@ -95,7 +95,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             public void onRefresh()
             {
                 refreshLayout.setRefreshing(true);
-                if(checkNetwork()){networkOK();httpUtil.getData(cityid);}
+                if(checkNetwork()){
+                    networkOK();
+                    cityid = myApplication.otherUtil.getCity("城市","101010100");
+                    httpUtil.getData(cityid);
+                    toolBarTitle.setText(dbManager.queryCityName(cityid));
+                }
                 else {networkError();}
                 new  Thread(new myThread()).start();
             }
