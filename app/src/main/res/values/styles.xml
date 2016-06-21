@@ -10,10 +10,10 @@
     </style>
 
     <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
-
+        <item name="android:colorAccent">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
+        <item name="windowActionBarOverlay">true</item>
     </style>
 
     <style name="SettingsTheme" parent="Theme.AppCompat.NoActionBar">

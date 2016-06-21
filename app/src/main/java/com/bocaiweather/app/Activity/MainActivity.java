@@ -2,7 +2,6 @@ package com.bocaiweather.app.Activity;
 
 import android.app.SearchManager;
 import android.content.Context;
-import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.Network;
 import android.net.NetworkInfo;
@@ -24,18 +23,20 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
-import android.widget.Toast;
+import android.widget.TextView;
 
 import com.bocaiweather.app.R;
 
-import Util.HttpUtil;
-import Util.ImageUtil;
+import util.HttpUtil;
+import util.ImageUtil;
+import util.myApplication;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener
 {
     private ImageUtil imageUtil;
     private Toolbar toolbar;
     private ImageView image;
+    private TextView toolBarTitle;
     private ImageView blurImage;
     private String cityid = "101010100";
     public View errorLayout;
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public Handler mHandler = new Handler();
     public SwipeRefreshLayout refreshLayout;
     public static RecyclerView recyclerView;
+
+    public String locationCity;
 
     //public  OtherUtil otherUtil = new OtherUtil();
 
@@ -59,7 +62,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         setContentView(R.layout.activity_main);
         initView();
+        toolbar.setTitle("");
         setSupportActionBar(toolbar);
+
 
         /*ToolBar与DrawerLayout绑定*/
         DrawerLayout drawer = (DrawerLayout)findViewById(R.id.drawer_layout);
@@ -83,8 +88,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recyclerView.addOnScrollListener(new RecyclerViewListener());
        if(!checkNetwork()){ networkError();}
         else {
-           httpUtil.getData(cityid);
-           imageUtil = new ImageUtil(image,blurImage);
+           new  Thread(new checkLocationInfo()).start();
        }
         refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
@@ -96,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 new  Thread(new myThread()).start();
             }
         });
-
+        myApplication.baiduLocate.stop();
     }
 
 
@@ -110,6 +114,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recyclerView = (RecyclerView)findViewById(R.id.recyclerView);
         navigationView = (NavigationView)findViewById(R.id.nav_view);
         refreshLayout = (SwipeRefreshLayout)findViewById(R.id.swiperfresh);
+        toolBarTitle = (TextView)findViewById(R.id.toolbar_title);
+        imageUtil = new ImageUtil();
 
     }
 
@@ -120,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getMenuInflater().inflate(R.menu.menu,menu);
 
         // 关联检索配置和SearchView   http://hukai.me/android-training-course-in-chinese/ux/search/setup.html
-        SearchManager searchManager =
+        final SearchManager searchManager =
                 (SearchManager) getSystemService(Context.SEARCH_SERVICE);
         final SearchView searchView =
                 (SearchView) menu.findItem(R.id.menu_search).getActionView();
@@ -135,12 +141,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener(){
             @Override
             public boolean onQueryTextSubmit(String query){
-                Toast.makeText(MainActivity.this, query, Toast.LENGTH_SHORT).show();
+               // Toast.makeText(MainActivity.this, query, Toast.LENGTH_SHORT).show();
                 searchView.clearFocus();
                  cityid = dbManager.queryCityID(query); //查询数据库，获取城市代号
                  if (cityid!=null){
                      httpUtil.getData(cityid);
-
+                     myApplication.otherUtil.saveCity("城市",cityid);
+                   toolBarTitle.setText(query);
+                     searchView.setIconifiedByDefault(true);
                  }
                 return true;
             }
@@ -178,10 +186,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (id == R.id.nav_setting) {
 
-            Intent intent = new Intent(MainActivity.this,NavSettingActivity.class);
-            startActivity(intent);
+           /* Intent intent = new Intent(MainActivity.this,NavSettingActivity.class);
+            startActivity(intent);*/
         } else if (id == R.id.nav_share) {
-            Toast.makeText(this,"you click nav_share",Toast.LENGTH_SHORT).show();
+            //.makeText(this,"you click nav_share",Toast.LENGTH_SHORT).show();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -201,6 +209,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             //大于0表示在上滑，小于0表示在下滑
             if (dy>0) {
                 alpha = 1.0f;
+                toolbar.hideOverflowMenu();
             } else if (dy < 0) {
                 alpha = 0.0f;
             }
@@ -229,14 +238,33 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 @Override
                 public void run()
                 {
-                    //recyclerView.getAdapter().notifyDataSetChanged();
-                    recyclerView.setAdapter(adapter);
+                    recyclerView.getAdapter().notifyDataSetChanged();
                     refreshLayout.setRefreshing(false);
                 }
             });
         }
     }
 
+    public class checkLocationInfo implements Runnable{
+        @Override
+        public void run(){
+            while (myApplication.baiduLocate.cityName!=null){
+                mHandler.post(new Runnable() {
+                    @Override
+                    public void run()
+                    {
+                        locationCity = dbManager.queryCityID(myApplication.baiduLocate.cityName);
+                        myApplication.otherUtil.saveCity("城市",locationCity);
+                        cityid = myApplication.otherUtil.getCity("城市",locationCity);//先看看有没有默认城市，如果没有就用定位到的城市
+                        httpUtil.getData(cityid);
+                        toolBarTitle.setText(dbManager.queryCityName(cityid));
+                        imageUtil.applyBlur(image,blurImage);
+                    }
+                });
+                    break;
+            }
+        }
+}
 
     /**检测网络情况*/
     private boolean checkNetwork(){
@@ -246,6 +274,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if(network!=null&&networkInfo!=null)
             return true;
         return false;
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
+
     }
 }
 

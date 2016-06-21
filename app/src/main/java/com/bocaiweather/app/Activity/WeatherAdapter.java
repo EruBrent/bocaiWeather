@@ -15,8 +15,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.bocaiweather.app.R;
+import com.bumptech.glide.Glide;
 
-import Util.myApplication;
+import util.myApplication;
 
 /**
  * Created by oyj
@@ -95,12 +96,19 @@ public class WeatherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                                 ((secondItem) holder).forecastWeek[i].
                                         setText(myApplication.otherUtil.dayForWeek(temp.dailyForecast.get(i).date));
 
-                        for (WeatherTest.WeatherData temp :MainActivity.httpUtil.weather.weatherData){
-                            ((secondItem)holder).forecastMin[i].
+                        for (WeatherTest.WeatherData temp : MainActivity.httpUtil.weather.weatherData)
+                        {
+                            ((secondItem) holder).forecastMin[i].
                                     setText(temp.dailyForecast.get(i).tmp.min);
-                            ((secondItem)holder).forecastMax[i].
+                            ((secondItem) holder).forecastMax[i].
                                     setText(temp.dailyForecast.get(i).tmp.max);
+                            //用Glideg更新图片
+                            Glide.with(context)
+                                 .load(myApplication.otherUtil.
+                                            getIconData(temp.dailyForecast.get(i).cond.txtD, R.drawable.sadcloud))
+                                 .into(((secondItem)holder).forecastImage[i]);
                         }
+
                     }
                 }
             } catch (Exception e) {e.printStackTrace();}
@@ -134,7 +142,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                     for (WeatherTest.WeatherData temp:MainActivity.httpUtil.weather.weatherData)
                     {
                         ((fourthItem) holder).wind_velocity.setText("风速: " + temp.now.wind.spd+"km/h" );
-                        int_wind = Integer.parseInt(temp.now.hum);
+                        int_wind = Integer.parseInt(temp.now.wind.spd);
                     }
                     int temp_value=int_wind/10; //如果直接给animation使用，那么将会使得出来的值不是359的倍数，从而导致出现卡顿效果，所以在这里先把它转化为整数
                     animation = new RotateAnimation(0f,359f*temp_value,
@@ -206,7 +214,7 @@ public class WeatherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         private TextView[] forecastMin = new TextView[7]; //未来几天的最低温度
         private TextView[] forecastMax = new TextView[7];
         private TextView textView;
-        private ImageView image;
+        private ImageView[] forecastImage = new ImageView[7];
 
         public secondItem(View v)
         {
@@ -220,10 +228,11 @@ public class WeatherAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                 forecastWeek[i] = (TextView) view.findViewById(R.id.forecast_week);
                 forecastMin[i] = (TextView)view.findViewById(R.id.forecast_mintemperature);
                 forecastMax[i] = (TextView)view.findViewById(R.id.forecast_maxtemperature);
+                forecastImage[i] = (ImageView) view.findViewById(R.id.forecast_image);
                 forecastLayout.addView(view);
             }
             forecastLayout.setVisibility(View.VISIBLE);
-            image = (ImageView) v.findViewById(R.id.divider);
+
         }
     }
 

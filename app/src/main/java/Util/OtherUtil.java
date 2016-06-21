@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,7 +12,7 @@ import java.util.Calendar;
 
 /**
  * Created by oyj
- * 作用：
+ *
  */
 
 public class OtherUtil

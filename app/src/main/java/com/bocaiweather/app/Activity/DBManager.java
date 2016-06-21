@@ -5,7 +5,6 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.bocaiweather.app.R;
 
@@ -28,6 +27,7 @@ public class DBManager
     public static final String DB_PATH = "/data" + Environment.getDataDirectory().getAbsolutePath() + "/" +
             PACKAGE_NAME;
     public String cityID;
+    public String cityName;
     private SQLiteDatabase database;
     private Context context;
 
@@ -101,11 +101,30 @@ public class DBManager
             cursor.moveToFirst();
             cityID = cursor.getString(cursor
                     .getColumnIndex("WEATHER_ID"));
-            Toast.makeText(context,cityID , Toast.LENGTH_SHORT).show();
+          //  Toast.makeText(context,cityID , Toast.LENGTH_SHORT).show();
         }
         cursor.close();
         return  cityID;
     }
+
+    //获得对应编号的城市名
+    public String queryCityName(String cityID)
+    {
+        String sql = "select * from city_table where WEATHER_ID =" + "'"
+                + cityID + "'" + ";";
+        SQLiteDatabase db = this.openDatabase();
+        Cursor cursor = db.rawQuery(sql,null);
+
+        if (cursor != null) {
+            cursor.moveToFirst();
+            cityName = cursor.getString(cursor
+                    .getColumnIndex("CITY"));
+           // Toast.makeText(context,cityName , Toast.LENGTH_SHORT).show();
+        }
+        cursor.close();
+        return  cityName;
+    }
+
 }
 
 

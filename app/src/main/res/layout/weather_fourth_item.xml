@@ -36,7 +36,11 @@
         android:layout_marginTop="71dp"
         android:layout_marginEnd="39dp"
         android:layout_alignTop="@+id/blade"
-        android:layout_alignEnd="@+id/blade"/>
+        android:layout_alignEnd="@+id/blade"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+
+       />
 <TextView
     android:id="@+id/Wind_velocity"
     android:text="风速：40km/h"

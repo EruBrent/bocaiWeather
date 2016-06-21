@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -15,6 +15,7 @@ import java.io.OutputStream;
 
 /**
  * Created by oyj
+ * 作用：主要进行图片虚化的工作
  */
 public class ImageUtil
 {
@@ -24,14 +25,15 @@ public class ImageUtil
             PACKAGE_NAME + "/" + DB_NAME;
 
 
-    public ImageUtil(ImageView image, ImageView blurImage){
-        applyBlur(image,blurImage);
+    public ImageUtil(){
+
     }
+
 
 
     //作用：背景虚化
     //参考：http://blog.jobbole.com/63894/
-    private void applyBlur(final ImageView image, final ImageView blurImage) {
+    public void applyBlur(final ImageView image, final ImageView blurImage) {
         image.getViewTreeObserver().addOnPreDrawListener(new ViewTreeObserver.OnPreDrawListener() {
             @Override
             public boolean onPreDraw() {

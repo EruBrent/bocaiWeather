@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="exitUntilCollapsed">
+         >
 
 
                 <ImageView
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:layout_alignParentTop="true"
-            app:layout_collapseMode="pin"
+         
             android:layout_alignParentStart="true"/>
     </android.support.v4.widget.SwipeRefreshLayout>
 
@@ -65,8 +65,17 @@
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        app:layout_collapseMode="pin"
+        app:layout_scrollFlags="scroll|enterAlways"
+
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        android:layout_height="?attr/actionBarSize"/>
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/toolbar_title"
+            android:textSize="20sp"/>
+    </android.support.v7.widget.Toolbar>
 </FrameLayout>
+  <!--  app:layout_collapseMode="pin"-->
