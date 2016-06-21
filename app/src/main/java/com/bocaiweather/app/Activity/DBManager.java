@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Environment;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.bocaiweather.app.R;
 
@@ -92,18 +93,24 @@ public class DBManager
     //获得对应城市的城市编号
     public String queryCityID(String cityName)
     {
-        String sql = "select * from city_table where CITY =" + "'"
-                + cityName + "'" + ";";
-        SQLiteDatabase db = this.openDatabase();
-        Cursor cursor = db.rawQuery(sql,null);
+        try
+        {
+            String sql = "select * from city_table where CITY =" + "'"
+                    + cityName + "'" + ";";
+            SQLiteDatabase db = this.openDatabase();
+            Cursor cursor = db.rawQuery(sql,null);
 
-        if (cursor != null) {
-            cursor.moveToFirst();
-            cityID = cursor.getString(cursor
-                    .getColumnIndex("WEATHER_ID"));
-          //  Toast.makeText(context,cityID , Toast.LENGTH_SHORT).show();
+            if (cursor != null) {
+                cursor.moveToFirst();
+                cityID = cursor.getString(cursor
+                        .getColumnIndex("WEATHER_ID"));
+                //  Toast.makeText(context,cityID , Toast.LENGTH_SHORT).show();
+            }
+            cursor.close();
+
+        }catch (Exception e){e.printStackTrace();
+            Toast.makeText(context,"请输入城市中文名",Toast.LENGTH_LONG).show();
         }
-        cursor.close();
         return  cityID;
     }
 
