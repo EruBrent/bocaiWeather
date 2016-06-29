@@ -3,7 +3,6 @@ package com.bocaiweather.app.Activity;
 import android.app.SearchManager;
 import android.content.Context;
 import android.net.ConnectivityManager;
-import android.net.Network;
 import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.os.Handler;
@@ -43,8 +42,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private NavigationView navigationView;
     private DBManager dbManager = new DBManager(this);
     public static HttpUtil httpUtil = new HttpUtil();
-    public static WeatherAdapter adapter;
+    public  WeatherAdapter adapter;
     public Handler mHandler = new Handler();
+    public Handler handler = new Handler();
     public SwipeRefreshLayout refreshLayout;
     public static RecyclerView recyclerView;
 
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recyclerView.setAdapter(adapter);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.addOnScrollListener(new RecyclerViewListener());
-       if(!checkNetwork()){ networkError();}
+       if(!checkNetwork()){networkError();}
         else {
            new  Thread(new checkLocationInfo()).start();
        }
@@ -253,30 +253,39 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public class checkLocationInfo implements Runnable{
         @Override
         public void run(){
-            while (myApplication.baiduLocate.cityName!=null){
-                mHandler.post(new Runnable() {
-                    @Override
-                    public void run()
+            while (true){
+                if(myApplication.baiduLocate.cityName !=null)
+                {
+                    handler.post(new Runnable()
                     {
-                        locationCity = dbManager.queryCityID(myApplication.baiduLocate.cityName);
-                        myApplication.otherUtil.saveCity("城市",locationCity);
-                        cityid = myApplication.otherUtil.getCity("城市",locationCity);//先看看有没有默认城市，如果没有就用定位到的城市
-                        httpUtil.getData(cityid);
-                        toolBarTitle.setText(dbManager.queryCityName(cityid));
-                        imageUtil.applyBlur(image,blurImage);
-                    }
-                });
+                        @Override
+                        public void run()
+                        {
+                            locationCity = dbManager.queryCityID(myApplication.baiduLocate.cityName);
+                            myApplication.otherUtil.saveCity("城市", locationCity);
+                            cityid = myApplication.otherUtil.getCity("城市", locationCity);//先看看有没有默认城市，如果没有就用定位到的城市
+                            httpUtil.getData(cityid);
+                            toolBarTitle.setText(dbManager.queryCityName(cityid));
+                            imageUtil.applyBlur(image, blurImage);
+                        }
+
+                    });
                     break;
+                }
+            }
+
+
+
             }
         }
-}
+
 
     /**检测网络情况*/
     private boolean checkNetwork(){
         ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        Network[] network = cm.getAllNetworks();
+       // NetworkInfo network = cm.getAllNetworks();
         NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-        if(network!=null&&networkInfo!=null)
+        if(/*network!=null&&*/networkInfo!=null)
             return true;
         return false;
     }
